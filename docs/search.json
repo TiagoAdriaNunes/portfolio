@@ -18,7 +18,7 @@
     "href": "index.html#skills",
     "title": "About Me",
     "section": "Skills",
-    "text": "Skills\n\nBusiness Analysis: Requirements Elicitation, Requirements Analysis, Requirements Management and Solution Assessment and Validation.\nData Analysis: Extracting, Cleaning and Transformation.\nSQL: DQL (Data Query Language), DML (Data Manipulation Language), DDL (Data Definition Language), DCL (Data Control Language) and TCL (Transaction Control Language).\nR: packages as Shiny, Quarto, SparkR, Tidyverse, Janitor and ggplot2.\nPython: packages as Quarto, Shiny, Pandas, Matplotlib, Numpy and PySpark.\nAgile methodologies: Scrum and Kanban.\nBPMN (Business Process Model and Notation).\nUML (Unified Modeling Language).\nPowerBI and Tableau.\nJira and Confluence."
+    "text": "Skills\n\nBusiness Analysis: Requirements Elicitation, Requirements Analysis, Requirements Management and Solution Assessment and Validation.\nData Analysis: Extracting, Cleaning and Transformation.\nSQL: DQL (Data Query Language), DML (Data Manipulation Language), DDL (Data Definition Language), DCL (Data Control Language) and TCL (Transaction Control Language).\nR: packages as Shiny, Quarto, SparkR, Tidyverse, Janitor and ggplot2.\nPython: packages as Quarto, Shiny, Pandas, Matplotlib, Numpy and PySpark.\nAgile methodologies: Scrum and Kanban.\nBPMN (Business Process Model and Notation).\nUML (Unified Modeling Language).\nPower BI and Tableau.\nJira and Confluence."
   },
   {
     "objectID": "index.html#education",
