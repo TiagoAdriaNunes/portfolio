@@ -21,7 +21,7 @@ I am a **Senior IT Business Analyst** with over 10 years of experience in the IT
 
 **IMDb Top 5000** - [Shiny Dashboard APP](https://shiny.posit.co/){target="_blank"}: Showcases the top 5000 movies from IMDb. The user can filter the data by title, director, genre, year, rank, rating, and number of votes. The app was developed using R and Shiny. All the data comes straight from [IMDb.com](https://imdb.com/){target="_blank"}: <https://datasets.imdbws.com/>. See the app: [Launch the application](https://tiago-adria-nunes.shinyapps.io/IMDB_TOP_5000/ "Click here"){target="_blank"} (hosted in [shinyapps.io](https://www.shinyapps.io/){target="_blank"}). *The project is currently in progress and will undergo future improvements.*
 
-[![Click in the image to launch the app](img/Imdb_top_5000.png "IMDB Top 5000"){fig-alt="Click in the image to launch the app" width="1280"}](https://tiago-adria-nunes.shinyapps.io/IMDB_TOP_5000/){target="_blank"}
+[![Click in the image to launch the app](img/Imdb_top_5000.png "IMDB Top 5000"){target="_blank" fig-alt="Click in the image to launch the app" width="1280"}](https://tiago-adria-nunes.shinyapps.io/IMDB_TOP_5000/)
 
 ## Skills
 
@@ -51,7 +51,7 @@ I am a **Senior IT Business Analyst** with over 10 years of experience in the IT
 
 ## Contact
 
--   Email: [tiagoadrianunes@gmail.com](mailto:tiagoadrianunes@gmail.com){target="_blank"}
+-   Email: [tiagoadrianunes\@gmail.com](mailto:tiagoadrianunes@gmail.com){target="_blank"}
 -   LinkedIn: [Tiago Adria Nunes](https://www.linkedin.com/in/tiago-adria-nunes/){target="_blank"}
 -   GitHub: [Tiago Adria Nunes](https://github.com/TiagoAdriaNunes){target="_blank"}
 
