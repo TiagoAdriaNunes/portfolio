@@ -1,4 +1,7 @@
+.website-template.Rproj
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
+
+/.quarto/
