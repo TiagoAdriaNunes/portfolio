@@ -7,21 +7,25 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - projects.qmd
+        text: About
     tools:
       - icon: linkedin
         href: https://www.linkedin.com/in/tiagoadrianunes/
       - icon: github
         href: https://github.com/TiagoAdriaNunes/
   page-footer:
-    right: "Built with [Quarto](https://quarto.org/)"
     left: "&copy; Copyright 2024, Tiago Adria Nunes"
 
 format:
   html:
     theme: darkly
     toc: true
-
+    toc_depth: 2
+    toc-title: On this page
+    toc_float: true
+    toc_smooth_scroll: true
+    toc_highlight: true
+    fig-align: center
+    
 editor: source
 

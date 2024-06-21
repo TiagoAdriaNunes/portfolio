@@ -4,17 +4,55 @@ about:
   id: me
   template: jolla
   image: img/profile.png
-  
+format: 
+  html:
+    toc: true
+    toc-depth: 2  # Include up to h2 headings
+    toc-location: left  # Place the TOC on the left side
 ---
 
-:::{#me}
+::: {#me}
+Hi, I'm Tiago Adria Nunes. Welcome to my portfolio.
 
-## Goals
+I am a **Senior IT Business Analyst** with over 10 years of experience in the IT industry. I have a strong background in **processes** and **data**. I have worked on various projects, from small to large scale, in different industries such as **banking**, **healthcare**, **education**, and **insurance**. I have successfully led several development teams and collaborated with various business areas. I am **detail-oriented** and **results-driven**, with strong analytical and problem-solving skills. I learn quickly and am always seeking new challenges and opportunities to acquire knowledge.
+:::
+
+## Projects
+
+**IMDb Top 5000** - [Shiny Dashboard APP](https://shiny.posit.co/): Showcases the top 5000 movies from IMDb. The user can filter the data by title, director, genre, year, rank, rating, and number of votes. The app was developed using R and Shiny. All the data comes straight from [IMDb.com](https://imdb.com/): <https://datasets.imdbws.com/>. See the app: [Launch the application](https://tiago-adria-nunes.shinyapps.io/IMDB_TOP_5000/ "Click here") (hosted in [shinyapps.io](https://www.shinyapps.io/)). *The project is currently in progress and will undergo future improvements.*
+
+[![Click in the image to launch the app](img/Imdb_top_5000.png "IMDB Top 5000"){fig-alt="Click in the image to launch the app" width="1280"}](https://tiago-adria-nunes.shinyapps.io/IMDB_TOP_5000/)
+
+## Skills
+
+-   Business Analysis: Requirements Elicitation, Requirements Analysis, Requirements Management and Solution Assessment and Validation.
+-   Data Analysis: Extracting, Cleaning and Transformation.
+-   SQL: DQL (Data Query Language), DML (Data Manipulation Language), DDL (Data Definition Language), DCL (Data Control Language) and TCL (Transaction Control Language).
+-   R: packages as Shiny, Quarto, SparkR, Tidyverse, Janitor and ggplot2.
+-   Python: packages as Quarto, Shiny, Pandas, Matplotlib, Numpy and PySpark.
+-   Agile methodologies: Scrum and Kanban.
+-   BPMN (Business Process Model and Notation).
+-   UML (Unified Modeling Language).
+-   PowerBI and Tableau.
+-   Jira and Confluence.
 
 ## Education
 
-## Experience
+-   2023-2024 - Postgraduate in Data Science (Descomplica) - In progress.
+-   2023-2024 - Postgraduate in Software Engineering (Descomplica).
+-   2006-2009 - Undergraduate in Business Administration (Anhanguera).
 
-:::
+## Certifications
 
-Thanks for checking out my web site!
+-   Google Advanced Data Analytics Professional Certificate (2023) - [Coursera](https://www.coursera.org/professional-certificates/google-data-analytics).
+-   Data Science: Foundations using R (2023) - [Coursera](https://www.coursera.org/learn/data-science-foundations-r).
+-   Google Data Analytics Professional Certificate (2022) - [Coursera](https://www.coursera.org/professional-certificates/google-data-analytics).
+-   Software Product Management Specialization (2018) - [Coursera](https://www.coursera.org/specializations/software-product-management).
+
+## Contact
+
+-   Email: [tiagoadrianunes@gmail.com](mailto:)
+-   LinkedIn: [Tiago Adria Nunes](https://www.linkedin.com/in/tiago-adria-nunes/)
+-   GitHub: [Tiago Adria Nunes](https://github.com/TiagoAdriaNunes)
+
+Thanks for checking out my portfolio.
