@@ -57,7 +57,7 @@ See the app: [Launch the application](https://tiagoadrianunes.shinyapps.io/IMDB_
 
 ## Contact
 
--   Email: [tiagoadrianunes\@gmail.com](mailto:tiagoadrianunes@gmail.com){target="_blank"}
+-   Email: [tiagoadrianunes@gmail.com](mailto:tiagoadrianunes@gmail.com){target="_blank"}
 -   LinkedIn: [Tiago Adria Nunes](https://www.linkedin.com/in/tiago-adria-nunes/){target="_blank"}
 -   GitHub: [Tiago Adria Nunes](https://github.com/TiagoAdriaNunes){target="_blank"}
 
