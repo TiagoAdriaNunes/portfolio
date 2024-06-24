@@ -19,9 +19,15 @@ I am a **Senior IT Business Analyst** with over 10 years of experience in the IT
 
 ## Projects
 
-**IMDb Top 5000** - [Shiny Dashboard APP](https://shiny.posit.co/){target="_blank"}: Showcases the top 5000 movies from IMDb. The user can filter the data by title, director, genre, year, rank, rating, and number of votes. The app was developed using R and Shiny. All the data comes straight from [IMDb.com](https://imdb.com/){target="_blank"}: <https://datasets.imdbws.com/>. See the app: [Launch the application](https://tiagoadrianunes.shinyapps.io/IMDB_TOP_5000/ "Click here"){target="_blank"} (hosted in [shinyapps.io](https://www.shinyapps.io/){target="_blank"}). *The project is currently in progress and will undergo future improvements.*
+**IMDb Top 5000** - [Shiny Dashboard APP](https://shiny.posit.co/){target="_blank"}: Showcases the top 5000 movies from IMDb. The user can filter the data by title, director, genre, year, rank, rating, and number of votes. The app was developed using R and Shiny. All the data comes straight from [IMDb.com](https://imdb.com/){target="_blank"}: <https://datasets.imdbws.com/>. 
+
+Repository link: [IMDb Top 5000](https://github.com/TiagoAdriaNunes/imdb_top_5000){target="_blank"}. 
+
+See the app: [Launch the application](https://tiagoadrianunes.shinyapps.io/IMDB_TOP_5000/ "Click here"){target="_blank"} (hosted in [shinyapps.io](https://www.shinyapps.io/){target="_blank"}).
 
 [![Click in the image to launch the app](img/Imdb_top_5000.png "IMDB Top 5000"){target="_blank" fig-alt="Click in the image to launch the app" width="1280"}](https://tiagoadrianunes.shinyapps.io/IMDB_TOP_5000/){target="_blank"}
+
+*The project is currently in progress and will undergo future improvements.*
 
 ## Skills
 

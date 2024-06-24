@@ -11,7 +11,7 @@
     "href": "index.html#projects",
     "title": "About Me",
     "section": "Projects",
-    "text": "Projects\nIMDb Top 5000 - Shiny Dashboard APP: Showcases the top 5000 movies from IMDb. The user can filter the data by title, director, genre, year, rank, rating, and number of votes. The app was developed using R and Shiny. All the data comes straight from IMDb.com: https://datasets.imdbws.com/. See the app: Launch the application (hosted in shinyapps.io). The project is currently in progress and will undergo future improvements.\n\n\n\nClick in the image to launch the app"
+    "text": "Projects\nIMDb Top 5000 - Shiny Dashboard APP: Showcases the top 5000 movies from IMDb. The user can filter the data by title, director, genre, year, rank, rating, and number of votes. The app was developed using R and Shiny. All the data comes straight from IMDb.com: https://datasets.imdbws.com/.\nRepository link: IMDb Top 5000.\nSee the app: Launch the application (hosted in shinyapps.io).\n\n\n\nClick in the image to launch the app\n\n\nThe project is currently in progress and will undergo future improvements."
   },
   {
     "objectID": "index.html#skills",
