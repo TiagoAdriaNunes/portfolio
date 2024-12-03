@@ -7,14 +7,16 @@ about:
 format: 
   html:
     toc: true
-    toc-depth: 2  # Include up to h2 headings
-    toc-location: left  # Place the TOC on the left side
+    toc-depth: 2
+    toc-location: left
 ---
 
 ::: {#me}
 Hi, I'm Tiago Adria Nunes. Welcome to my portfolio.
 
 I am a **Senior IT Business Analyst** with over 10 years of experience in the IT industry. I have a strong background in **processes** and **data**. I have worked on various projects, from small to large scale, in different industries such as **banking**, **healthcare**, **education**, and **insurance**. I have successfully led several development teams and collaborated with various business areas. I am **detail-oriented** and **results-driven**, with strong analytical and problem-solving skills. I learn quickly and am always seeking new challenges and opportunities to acquire knowledge.
+
+In recent years, I have transitioned to a more technical focus, leveraging my analytical expertise to specialize in data-driven development and interactive applications. As an **R/Shiny developer**, I design and develop advanced, interactive web applications tailored for data visualization, process automation, and business analytics.
 :::
 
 ## Projects
