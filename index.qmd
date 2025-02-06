@@ -4,7 +4,7 @@ about:
   id: me
   template: jolla
   image: img/profile.png
-format: 
+format:
   html:
     toc: true
     toc-depth: 2
@@ -14,16 +14,16 @@ format:
 ::: {#me}
 Hi, I'm Tiago Adria Nunes. Welcome to my portfolio.
 
-I am a **Senior IT Business Analyst** with over 10 years of experience in the IT industry. I have a strong background in **processes** and **data**. I have worked on various projects, from small to large scale, in different industries such as **banking**, **healthcare**, **education**, and **insurance**. I have successfully led several development teams and collaborated with various business areas. I am **detail-oriented** and **results-driven**, with strong analytical and problem-solving skills. I learn quickly and am always seeking new challenges and opportunities to acquire knowledge.
+I am a **R / Shiny Developer** with over 10 years of experience in the IT industry. I have a strong background in **processes** and **data**. I have worked on various projects, from small to large scale, in different industries such as **banking**, **healthcare**, **education**, and **insurance**. I have successfully led several development teams and collaborated with various business areas. I am **detail-oriented** and **results-driven**, with strong analytical and problem-solving skills. I learn quickly and am always seeking new challenges and opportunities to acquire knowledge.
 
 In recent years, I have transitioned to a more technical focus, leveraging my analytical expertise to specialize in data-driven development and interactive applications. As an **R/Shiny developer**, I design and develop advanced, interactive web applications tailored for data visualization, process automation, and business analytics.
 :::
 
 ## Projects
 
-**[IMDb Top 5000](https://github.com/TiagoAdriaNunes/imdb_top_5000){target="_blank"}** - [Shiny Dashboard APP](https://shiny.posit.co/){target="_blank"}: Showcases the top 5000 movies from IMDb. The user can filter the data by title, director, genre, year, rank, rating, and number of votes. The app was developed using R and Shiny. All the data comes straight from [IMDb.com](https://imdb.com/){target="_blank"}: <https://datasets.imdbws.com/>. 
+**[IMDb Top 5000](https://github.com/TiagoAdriaNunes/imdb_top_5000){target="_blank"}** - [Shiny Dashboard APP](https://shiny.posit.co/){target="_blank"}: Showcases the top 5000 movies from IMDb. The user can filter the data by title, director, genre, year, rank, rating, and number of votes. The app was developed using R and Shiny. All the data comes straight from [IMDb.com](https://imdb.com/){target="_blank"}: <https://datasets.imdbws.com/>.
 
-Repository link: [IMDb Top 5000](https://github.com/TiagoAdriaNunes/imdb_top_5000){target="_blank"}. 
+Repository link: [IMDb Top 5000](https://github.com/TiagoAdriaNunes/imdb_top_5000){target="_blank"}.
 
 See the app: [Launch the application](https://tiagoadrianunes.shinyapps.io/IMDB_TOP_5000/ "Click here"){target="_blank"} (hosted in [shinyapps.io](https://www.shinyapps.io/){target="_blank"}).
 
@@ -31,9 +31,30 @@ See the app: [Launch the application](https://tiagoadrianunes.shinyapps.io/IMDB_
 
 *The project is currently in progress and will undergo future improvements.*
 
+**[Spotify Search App](https://tiagoadrianunes.shinyapps.io/shiny_spotify/){target="_blank"}** - [Shiny Dashboard APP](https://shiny.posit.co/){target="_blank"}: An interactive application that allows users to search for artists, view their profiles, explore their top tracks, and discover related artists through the Spotify API. Users can also search for artists by genre and visualize the top artists in that genre. The app features caching for improved performance and uses the Rhino framework for enterprise-grade structure.
+
+Repository link: [Spotify Search App](https://github.com/TiagoAdriaNunes/shiny_spotify){target="_blank"}.
+
+See the app: [Launch the application](https://tiagoadrianunes.shinyapps.io/shiny_spotify/ "Click here"){target="_blank"} (hosted in [shinyapps.io](https://www.shinyapps.io/){target="_blank"}).
+
+[![Click in the image to launch the app](img/shiny_spotify.gif "Spotify Search App"){target="_blank" fig-alt="Click in the image to launch the app" width="1280"}](https://tiagoadrianunes.shinyapps.io/shiny_spotify/)
+
+Key features:
+
+-   Artist search with detailed profiles, top tracks, and related artists visualization
+
+-   Genre-based artist discovery with popularity and follower metrics
+
+-   Interactive data visualizations using ApexCharter and visNetwork
+
+-   Efficient API request caching using memoise - Built with enterprise-grade Rhino framework
+
+*The project showcases modern R/Shiny development practices and interactive data visualization techniques.*
+
 **[ETL In Python](https://github.com/TiagoAdriaNunes/etl_python){target="_blank"}**: This project implements an ETL (**E**xtract, **T**ransform, **L**oad) process to extract data from various file formats ('.csv', '.json', '.xml'), transform the data, and load it into a target '.csv' file. The project also logs the progress of the ETL process.
 
 Example output and log file:
+
 ```sh
 2024-Jul-14-12:34:56,ETL Job Started
 2024-Jul-14-12:34:56,Extract phase Started
