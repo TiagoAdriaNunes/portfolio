@@ -51,27 +51,21 @@ Key features:
 
 *The project showcases modern R/Shiny development practices and interactive data visualization techniques.*
 
-**[ETL In Python](https://github.com/TiagoAdriaNunes/etl_python){target="_blank"}**: This project implements an ETL (**E**xtract, **T**ransform, **L**oad) process to extract data from various file formats ('.csv', '.json', '.xml'), transform the data, and load it into a target '.csv' file. The project also logs the progress of the ETL process.
+**[Airflow DBT DuckDB Pipeline](https://github.com/TiagoAdriaNunes/airflow-dbt-duckdb){target="_blank"}**: A modern data pipeline that orchestrates DBT (Data Build Tool) transformations using Apache Airflow and DuckDB. This project demonstrates a complete ELT (Extract, Load, Transform) workflow with data quality testing, documentation, and dependency management.
 
-Example output and log file:
+Key features:
 
-```sh
-2024-Jul-14-12:34:56,ETL Job Started
-2024-Jul-14-12:34:56,Extract phase Started
-2024-Jul-14-12:34:58,Extract phase Ended
-2024-Jul-14-12:34:58,Transform phase Started
-Transformed Data
-       name  height  weight
-0      John    1.75    70.3
-1      Jane    1.62    55.8
-...
-2024-Jul-14-12:35:00,Transform phase Ended
-2024-Jul-14-12:35:00,Load phase Started
-2024-Jul-14-12:35:01,Load phase Ended
-2024-Jul-14-12:35:01,ETL Job Ended
-```
+-   Apache Airflow for workflow orchestration and scheduling
 
-Repository link: [ETL Python](https://github.com/TiagoAdriaNunes/etl_python){target="_blank"}.
+-   DBT for data transformations with SQL-based modeling
+
+-   DuckDB as a lightweight, embedded analytical database
+
+-   Automated data quality tests and documentation
+
+-   Modular and scalable pipeline architecture
+
+Repository link: [Airflow DBT DuckDB](https://github.com/TiagoAdriaNunes/airflow-dbt-duckdb){target="_blank"}.
 
 ## Skills
 
