@@ -21,7 +21,7 @@ In recent years, I have transitioned to a more technical focus, leveraging my an
 
 ## Projects
 
-**[IMDb Top 5000](https://github.com/TiagoAdriaNunes/imdb_top_5000){target="_blank"}** - [Shiny Dashboard APP](https://shiny.posit.co/){target="_blank"}: Showcases the top 5000 movies from IMDb. The user can filter the data by title, director, genre, year, rank, rating, and number of votes. The app was developed using R and Shiny. All the data comes straight from [IMDb.com](https://imdb.com/){target="_blank"}: <https://datasets.imdbws.com/>.
+**[IMDb Top 5000](https://github.com/TiagoAdriaNunes/imdb_top_5000){target="_blank"}** `R/Shiny`: Showcases the top 5000 movies from IMDb. The user can filter the data by title, director, genre, year, rank, rating, and number of votes. All the data comes straight from [IMDb.com](https://imdb.com/){target="_blank"}: <https://datasets.imdbws.com/>.
 
 Repository link: [IMDb Top 5000](https://github.com/TiagoAdriaNunes/imdb_top_5000){target="_blank"}.
 
@@ -29,9 +29,28 @@ See the app: [Launch the application](https://tiagoadrianunes.shinyapps.io/IMDB_
 
 [![Click in the image to launch the app](img/Imdb_top_5000.gif "IMDB Top 5000"){target="_blank" fig-alt="Click in the image to launch the app" width="1280"}](https://tiagoadrianunes.shinyapps.io/IMDB_TOP_5000/){target="_blank"}
 
+*Also available as a TV Shows edition — [IMDb Top 5000 TV Shows](https://github.com/TiagoAdriaNunes/imdb_top_5000_tv_shows){target="_blank"} — applying the same filtering and visualization approach to series and TV content.*
+
 *The project is currently in progress and will undergo future improvements.*
 
-**[Spotify Search App](https://tiagoadrianunes.shinyapps.io/shiny_spotify/){target="_blank"}** - [Shiny Dashboard APP](https://shiny.posit.co/){target="_blank"}: An interactive application that allows users to search for artists, view their profiles, explore their top tracks, and discover related artists through the Spotify API. Users can also search for artists by genre and visualize the top artists in that genre. The app features caching for improved performance and uses the Rhino framework for enterprise-grade structure.
+**[Last.fm Global Trends](https://tiagoadrianunes.shinyapps.io/lastfm-global-trends/){target="_blank"}** `Python/Shiny`: An interactive dashboard that connects to the Last.fm API to visualize and explore global music trends. Users can discover what music is popular worldwide and drill down into country-level trend analysis.
+
+Repository link: [Last.fm Global Trends](https://github.com/TiagoAdriaNunes/lastfm-global-trends){target="_blank"}.
+
+See the app: [Launch the application](https://tiagoadrianunes.shinyapps.io/lastfm-global-trends/ "Click here"){target="_blank"} (hosted in [shinyapps.io](https://www.shinyapps.io/){target="_blank"}).
+
+[![Click in the image to launch the app](img/lastfm_app.gif "Last.fm Global Trends"){target="_blank" fig-alt="Click in the image to launch the app" width="1280"}](https://tiagoadrianunes.shinyapps.io/lastfm-global-trends/){target="_blank"}
+
+Key features:
+
+-   Real-time integration with the Last.fm API using pylast
+-   Interactive dashboard for browsing global music trends
+-   Country-level trend analysis and discovery
+-   Built with Shiny for Python
+
+*The project showcases modern Python/Shiny development with live API integration.*
+
+**[Spotify Search App](https://tiagoadrianunes.shinyapps.io/shiny_spotify/){target="_blank"}** `R/Shiny`: An interactive application that allows users to search for artists, view their profiles, explore their top tracks, and discover related artists through the Spotify API. Users can also search for artists by genre and visualize the top artists in that genre. The app features caching for improved performance and uses the Rhino framework for enterprise-grade structure.
 
 Repository link: [Spotify Search App](https://github.com/TiagoAdriaNunes/shiny_spotify){target="_blank"}.
 
@@ -42,27 +61,20 @@ See the app: [Launch the application](https://tiagoadrianunes.shinyapps.io/shiny
 Key features:
 
 -   Artist search with detailed profiles, top tracks, and related artists visualization
-
 -   Genre-based artist discovery with popularity and follower metrics
-
 -   Interactive data visualizations using ApexCharter and visNetwork
-
 -   Efficient API request caching using memoise - Built with enterprise-grade Rhino framework
 
 *The project showcases modern R/Shiny development practices and interactive data visualization techniques.*
 
-**[Airflow DBT DuckDB Pipeline](https://github.com/TiagoAdriaNunes/airflow-dbt-duckdb){target="_blank"}**: A modern data pipeline that orchestrates DBT (Data Build Tool) transformations using Apache Airflow and DuckDB. This project demonstrates a complete ELT (Extract, Load, Transform) workflow with data quality testing, documentation, and dependency management.
+**[Airflow DBT DuckDB Pipeline](https://github.com/TiagoAdriaNunes/airflow-dbt-duckdb){target="_blank"}** `Python/Airflow/DBT`: A modern data pipeline that orchestrates DBT (Data Build Tool) transformations using Apache Airflow and DuckDB. This project demonstrates a complete ELT (Extract, Load, Transform) workflow with data quality testing, documentation, and dependency management.
 
 Key features:
 
 -   Apache Airflow for workflow orchestration and scheduling
-
 -   DBT for data transformations with SQL-based modeling
-
 -   DuckDB as a lightweight, embedded analytical database
-
 -   Automated data quality tests and documentation
-
 -   Modular and scalable pipeline architecture
 
 Repository link: [Airflow DBT DuckDB](https://github.com/TiagoAdriaNunes/airflow-dbt-duckdb){target="_blank"}.

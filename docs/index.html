@@ -144,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="projects" class="level2">
 <h2 data-anchor-id="projects">Projects</h2>
-<p><strong><a href="https://github.com/TiagoAdriaNunes/imdb_top_5000" target="_blank">IMDb Top 5000</a></strong> - <a href="https://shiny.posit.co/" target="_blank">Shiny Dashboard APP</a>: Showcases the top 5000 movies from IMDb. The user can filter the data by title, director, genre, year, rank, rating, and number of votes. The app was developed using R and Shiny. All the data comes straight from <a href="https://imdb.com/" target="_blank">IMDb.com</a>: <a href="https://datasets.imdbws.com/" class="uri">https://datasets.imdbws.com/</a>.</p>
+<p><strong><a href="https://github.com/TiagoAdriaNunes/imdb_top_5000" target="_blank">IMDb Top 5000</a></strong> <code>R/Shiny</code>: Showcases the top 5000 movies from IMDb. The user can filter the data by title, director, genre, year, rank, rating, and number of votes. All the data comes straight from <a href="https://imdb.com/" target="_blank">IMDb.com</a>: <a href="https://datasets.imdbws.com/" class="uri">https://datasets.imdbws.com/</a>.</p>
 <p>Repository link: <a href="https://github.com/TiagoAdriaNunes/imdb_top_5000" target="_blank">IMDb Top 5000</a>.</p>
 <p>See the app: <a href="https://tiagoadrianunes.shinyapps.io/IMDB_TOP_5000/" target="_blank" title="Click here">Launch the application</a> (hosted in <a href="https://www.shinyapps.io/" target="_blank">shinyapps.io</a>).</p>
 <div class="quarto-figure quarto-figure-center">
@@ -153,8 +153,26 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>Click in the image to launch the app</figcaption>
 </figure>
 </div>
+<p><em>Also available as a TV Shows edition — <a href="https://github.com/TiagoAdriaNunes/imdb_top_5000_tv_shows" target="_blank">IMDb Top 5000 TV Shows</a> — applying the same filtering and visualization approach to series and TV content.</em></p>
 <p><em>The project is currently in progress and will undergo future improvements.</em></p>
-<p><strong><a href="https://tiagoadrianunes.shinyapps.io/shiny_spotify/" target="_blank">Spotify Search App</a></strong> - <a href="https://shiny.posit.co/" target="_blank">Shiny Dashboard APP</a>: An interactive application that allows users to search for artists, view their profiles, explore their top tracks, and discover related artists through the Spotify API. Users can also search for artists by genre and visualize the top artists in that genre. The app features caching for improved performance and uses the Rhino framework for enterprise-grade structure.</p>
+<p><strong><a href="https://tiagoadrianunes.shinyapps.io/lastfm-global-trends/" target="_blank">Last.fm Global Trends</a></strong> <code>Python/Shiny</code>: An interactive dashboard that connects to the Last.fm API to visualize and explore global music trends. Users can discover what music is popular worldwide and drill down into country-level trend analysis.</p>
+<p>Repository link: <a href="https://github.com/TiagoAdriaNunes/lastfm-global-trends" target="_blank">Last.fm Global Trends</a>.</p>
+<p>See the app: <a href="https://tiagoadrianunes.shinyapps.io/lastfm-global-trends/" target="_blank" title="Click here">Launch the application</a> (hosted in <a href="https://www.shinyapps.io/" target="_blank">shinyapps.io</a>).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://tiagoadrianunes.shinyapps.io/lastfm-global-trends/" target="_blank"><img src="img/lastfm_app.gif" title="Last.fm Global Trends" class="img-fluid figure-img" target="_blank" alt="Click in the image to launch the app" width="1280"></a></p>
+<figcaption>Click in the image to launch the app</figcaption>
+</figure>
+</div>
+<p>Key features:</p>
+<ul>
+<li>Real-time integration with the Last.fm API using pylast</li>
+<li>Interactive dashboard for browsing global music trends</li>
+<li>Country-level trend analysis and discovery</li>
+<li>Built with Shiny for Python</li>
+</ul>
+<p><em>The project showcases modern Python/Shiny development with live API integration.</em></p>
+<p><strong><a href="https://tiagoadrianunes.shinyapps.io/shiny_spotify/" target="_blank">Spotify Search App</a></strong> <code>R/Shiny</code>: An interactive application that allows users to search for artists, view their profiles, explore their top tracks, and discover related artists through the Spotify API. Users can also search for artists by genre and visualize the top artists in that genre. The app features caching for improved performance and uses the Rhino framework for enterprise-grade structure.</p>
 <p>Repository link: <a href="https://github.com/TiagoAdriaNunes/shiny_spotify" target="_blank">Spotify Search App</a>.</p>
 <p>See the app: <a href="https://tiagoadrianunes.shinyapps.io/shiny_spotify/" target="_blank" title="Click here">Launch the application</a> (hosted in <a href="https://www.shinyapps.io/" target="_blank">shinyapps.io</a>).</p>
 <div class="quarto-figure quarto-figure-center">
@@ -165,20 +183,20 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p>Key features:</p>
 <ul>
-<li><p>Artist search with detailed profiles, top tracks, and related artists visualization</p></li>
-<li><p>Genre-based artist discovery with popularity and follower metrics</p></li>
-<li><p>Interactive data visualizations using ApexCharter and visNetwork</p></li>
-<li><p>Efficient API request caching using memoise - Built with enterprise-grade Rhino framework</p></li>
+<li>Artist search with detailed profiles, top tracks, and related artists visualization</li>
+<li>Genre-based artist discovery with popularity and follower metrics</li>
+<li>Interactive data visualizations using ApexCharter and visNetwork</li>
+<li>Efficient API request caching using memoise - Built with enterprise-grade Rhino framework</li>
 </ul>
 <p><em>The project showcases modern R/Shiny development practices and interactive data visualization techniques.</em></p>
-<p><strong><a href="https://github.com/TiagoAdriaNunes/airflow-dbt-duckdb" target="_blank">Airflow DBT DuckDB Pipeline</a></strong>: A modern data pipeline that orchestrates DBT (Data Build Tool) transformations using Apache Airflow and DuckDB. This project demonstrates a complete ELT (Extract, Load, Transform) workflow with data quality testing, documentation, and dependency management.</p>
+<p><strong><a href="https://github.com/TiagoAdriaNunes/airflow-dbt-duckdb" target="_blank">Airflow DBT DuckDB Pipeline</a></strong> <code>Python/Airflow/DBT</code>: A modern data pipeline that orchestrates DBT (Data Build Tool) transformations using Apache Airflow and DuckDB. This project demonstrates a complete ELT (Extract, Load, Transform) workflow with data quality testing, documentation, and dependency management.</p>
 <p>Key features:</p>
 <ul>
-<li><p>Apache Airflow for workflow orchestration and scheduling</p></li>
-<li><p>DBT for data transformations with SQL-based modeling</p></li>
-<li><p>DuckDB as a lightweight, embedded analytical database</p></li>
-<li><p>Automated data quality tests and documentation</p></li>
-<li><p>Modular and scalable pipeline architecture</p></li>
+<li>Apache Airflow for workflow orchestration and scheduling</li>
+<li>DBT for data transformations with SQL-based modeling</li>
+<li>DuckDB as a lightweight, embedded analytical database</li>
+<li>Automated data quality tests and documentation</li>
+<li>Modular and scalable pipeline architecture</li>
 </ul>
 <p>Repository link: <a href="https://github.com/TiagoAdriaNunes/airflow-dbt-duckdb" target="_blank">Airflow DBT DuckDB</a>.</p>
 </section>
