@@ -4,41 +4,41 @@
     "href": "index.html",
     "title": "About Me",
     "section": "",
-    "text": "Hi, I’m Tiago Adria Nunes. Welcome to my portfolio.\nI am a R / Shiny Developer with over 10 years of experience in the IT industry. I have a strong background in processes and data. I have worked on various projects, from small to large scale, in different industries such as banking, healthcare, education, and insurance. I have successfully led several development teams and collaborated with various business areas. I am detail-oriented and results-driven, with strong analytical and problem-solving skills. I learn quickly and am always seeking new challenges and opportunities to acquire knowledge.\nIn recent years, I have transitioned to a more technical focus, leveraging my analytical expertise to specialize in data-driven development and interactive applications. As an R/Shiny developer, I design and develop advanced, interactive web applications tailored for data visualization, process automation, and business analytics."
+    "text": "Hi, I’m Tiago Adria Nunes — an R/Shiny Developer with 10+ years in IT, specializing in data-driven web applications, interactive dashboards, and process automation. I’ve led development teams across banking, healthcare, education, and insurance, and I bring the same analytical rigour to both technical and business problems."
   },
   {
     "objectID": "index.html#projects",
     "href": "index.html#projects",
     "title": "About Me",
     "section": "Projects",
-    "text": "Projects\nIMDb Top 5000 R/Shiny: Showcases the top 5000 movies from IMDb. The user can filter the data by title, director, genre, year, rank, rating, and number of votes. All the data comes straight from IMDb.com: https://datasets.imdbws.com/.\nRepository link: IMDb Top 5000.\nSee the app: Launch the application (hosted in shinyapps.io).\n\n\n\nClick in the image to launch the app\n\n\nAlso available as a TV Shows edition — IMDb Top 5000 TV Shows — applying the same filtering and visualization approach to series and TV content.\nThe project is currently in progress and will undergo future improvements.\nLast.fm Global Trends Python/Shiny: An interactive dashboard that connects to the Last.fm API to visualize and explore global music trends. Users can discover what music is popular worldwide and drill down into country-level trend analysis.\nRepository link: Last.fm Global Trends.\nSee the app: Launch the application (hosted in shinyapps.io).\n\n\n\nClick in the image to launch the app\n\n\nKey features:\n\nReal-time integration with the Last.fm API using pylast\nInteractive dashboard for browsing global music trends\nCountry-level trend analysis and discovery\nBuilt with Shiny for Python\n\nThe project showcases modern Python/Shiny development with live API integration.\nSpotify Search App R/Shiny: An interactive application that allows users to search for artists, view their profiles, explore their top tracks, and discover related artists through the Spotify API. Users can also search for artists by genre and visualize the top artists in that genre. The app features caching for improved performance and uses the Rhino framework for enterprise-grade structure.\nRepository link: Spotify Search App.\nSee the app: Launch the application (hosted in shinyapps.io).\n\n\n\nClick in the image to launch the app\n\n\nKey features:\n\nArtist search with detailed profiles, top tracks, and related artists visualization\nGenre-based artist discovery with popularity and follower metrics\nInteractive data visualizations using ApexCharter and visNetwork\nEfficient API request caching using memoise - Built with enterprise-grade Rhino framework\n\nThe project showcases modern R/Shiny development practices and interactive data visualization techniques.\nAirflow DBT DuckDB Pipeline Python/Airflow/DBT: A modern data pipeline that orchestrates DBT (Data Build Tool) transformations using Apache Airflow and DuckDB. This project demonstrates a complete ELT (Extract, Load, Transform) workflow with data quality testing, documentation, and dependency management.\nKey features:\n\nApache Airflow for workflow orchestration and scheduling\nDBT for data transformations with SQL-based modeling\nDuckDB as a lightweight, embedded analytical database\nAutomated data quality tests and documentation\nModular and scalable pipeline architecture\n\nRepository link: Airflow DBT DuckDB."
+    "text": "Projects\n\nIMDb Top 5000 — R/Shiny\nInteractive dashboard showcasing the top 5000 movies from IMDb, sourced live from IMDb datasets. Filter by title, director, genre, year, rank, rating, and vote count.\n\nFilter by title, director, genre, year, rank, rating, and votes\nTV Shows edition: IMDb Top 5000 TV Shows — same filtering approach applied to series and TV content\n\nGitHub · Live App\n\n\n\nClick to launch the app\n\n\n\n\n\nLast.fm Global Trends — Python/Shiny\nInteractive dashboard connecting to the Last.fm API to explore global and country-level music trends in real time.\n\nReal-time Last.fm API integration via pylast\nGlobal and country-level trend drill-down\n\nGitHub · Live App\n\n\n\nClick to launch the app\n\n\n\n\n\nSpotify Search App — R/Shiny\nSearch for artists, explore their profiles, top tracks, and related artists via the Spotify API. Includes genre-based discovery and network visualization of artist relationships.\n\nArtist profiles with top tracks and related-artist network graph\nGenre-based discovery with popularity and follower metrics\nAPI caching via memoise; built with the enterprise-grade Rhino framework\n\nGitHub · Live App\n\n\n\nClick to launch the app\n\n\n\n\n\nAirflow DBT DuckDB Pipeline — Python/Airflow/DBT\nA modern ELT pipeline orchestrating DBT transformations with Apache Airflow and DuckDB, including automated data quality tests and lineage documentation.\n\nAirflow for scheduling and orchestration\nDBT for SQL-based transformations with built-in testing\nDuckDB as a lightweight embedded analytical database\n\nGitHub"
   },
   {
     "objectID": "index.html#skills",
     "href": "index.html#skills",
     "title": "About Me",
     "section": "Skills",
-    "text": "Skills\n\nBusiness Analysis: Requirements Elicitation, Requirements Analysis, Requirements Management and Solution Assessment and Validation.\nData Analysis: Extracting, Cleaning and Transformation.\nSQL: DQL (Data Query Language), DML (Data Manipulation Language), DDL (Data Definition Language), DCL (Data Control Language) and TCL (Transaction Control Language).\nR: packages as Shiny, Quarto, SparkR, Tidyverse, Janitor and ggplot2.\nPython: packages as Quarto, Shiny, Pandas, Matplotlib, Numpy and PySpark.\nAgile methodologies: Scrum and Kanban.\nBPMN (Business Process Model and Notation).\nUML (Unified Modeling Language).\nPower BI and Tableau.\nJira and Confluence."
+    "text": "Skills\nLanguages & Frameworks R (Shiny, Quarto, Tidyverse, ggplot2, SparkR) · Python (Shiny, Pandas, NumPy, Matplotlib, PySpark) · SQL\nData & Analytics Data modeling · ELT/ETL pipelines · DBT · DuckDB · Power BI · Tableau\nProcess & Delivery Business Analysis · BPMN · UML · Scrum · Kanban · Jira · Confluence"
   },
   {
     "objectID": "index.html#education",
     "href": "index.html#education",
     "title": "About Me",
     "section": "Education",
-    "text": "Education\n\n2023-2024 - Postgraduate in Data Science (Descomplica) - In progress.\n2023-2024 - Postgraduate in Software Engineering (Descomplica).\n2006-2009 - Undergraduate in Business Administration (Anhanguera)."
+    "text": "Education\n\n2023–2024 — Postgraduate in Software Engineering — Descomplica\n2006–2009 — B.A. in Business Administration — Anhanguera"
   },
   {
     "objectID": "index.html#certifications",
     "href": "index.html#certifications",
     "title": "About Me",
     "section": "Certifications",
-    "text": "Certifications\n\nGoogle Advanced Data Analytics Professional Certificate (2023) - Coursera.\nData Science: Foundations using R (2023) - Coursera.\nGoogle Data Analytics Professional Certificate (2022) - Coursera.\nSoftware Product Management Specialization (2018) - Coursera."
+    "text": "Certifications\n\nGoogle Advanced Data Analytics Professional Certificate — Coursera, 2023\nData Science: Foundations using R — Coursera, 2023\nGoogle Data Analytics Professional Certificate — Coursera, 2022\nSoftware Product Management Specialization — Coursera, 2018"
   },
   {
     "objectID": "index.html#contact",
     "href": "index.html#contact",
     "title": "About Me",
     "section": "Contact",
-    "text": "Contact\n\nEmail: tiagoadrianunes@gmail.com\nLinkedIn: Tiago Adria Nunes\nGitHub: Tiago Adria Nunes\n\nThanks for checking out my portfolio."
+    "text": "Contact\ntiagoadrianunes@gmail.com · LinkedIn · GitHub"
   }
 ]
