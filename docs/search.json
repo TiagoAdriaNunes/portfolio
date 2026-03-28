@@ -2,42 +2,42 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "About Me",
+    "title": "Tiago Adria Nunes",
     "section": "",
-    "text": "Hi, I’m Tiago Adria Nunes — an R/Shiny Developer with 10+ years in IT, specializing in data-driven web applications, interactive dashboards, and process automation. I’ve led development teams across banking, healthcare, education, and insurance, and I bring the same analytical rigour to both technical and business problems."
+    "text": "Email\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     GitHub\n  \n\n  \n  \nHi, I’m Tiago Adria Nunes - an R/Shiny Developer with 10+ years in IT, specializing in data-driven web applications, interactive dashboards, and process automation. I’ve led development teams across banking, healthcare, education, and insurance, and I bring the same analytical rigour to both technical and business problems."
   },
   {
     "objectID": "index.html#projects",
     "href": "index.html#projects",
-    "title": "About Me",
+    "title": "Tiago Adria Nunes",
     "section": "Projects",
-    "text": "Projects\n\nIMDb Top 5000 — R/Shiny\nInteractive dashboard showcasing the top 5000 movies from IMDb, sourced live from IMDb datasets. Filter by title, director, genre, year, rank, rating, and vote count.\n\nFilter by title, director, genre, year, rank, rating, and votes\nTV Shows edition: IMDb Top 5000 TV Shows — same filtering approach applied to series and TV content\n\nGitHub · Live App\n\n\n\nClick to launch the app\n\n\n\n\n\nLast.fm Global Trends — Python/Shiny\nInteractive dashboard connecting to the Last.fm API to explore global and country-level music trends in real time.\n\nReal-time Last.fm API integration via pylast\nGlobal and country-level trend drill-down\n\nGitHub · Live App\n\n\n\nClick to launch the app\n\n\n\n\n\nSpotify Search App — R/Shiny\nSearch for artists, explore their profiles, top tracks, and related artists via the Spotify API. Includes genre-based discovery and network visualization of artist relationships.\n\nArtist profiles with top tracks and related-artist network graph\nGenre-based discovery with popularity and follower metrics\nAPI caching via memoise; built with the enterprise-grade Rhino framework\n\nGitHub · Live App\n\n\n\nClick to launch the app\n\n\n\n\n\nAirflow DBT DuckDB Pipeline — Python/Airflow/DBT\nA modern ELT pipeline orchestrating DBT transformations with Apache Airflow and DuckDB, including automated data quality tests and lineage documentation.\n\nAirflow for scheduling and orchestration\nDBT for SQL-based transformations with built-in testing\nDuckDB as a lightweight embedded analytical database\n\nGitHub"
+    "text": "Projects\n\nIMDb Top 5000\n\nR Shiny ShinyApps.io\n\nInteractive dashboard showcasing the top 5000 movies from IMDb, sourced live from IMDb datasets. Filter by title, director, genre, year, rank, rating, and vote count.\n\nFilter by title, director, genre, year, rank, rating, and votes\nTV Shows edition: IMDb Top 5000 TV Shows - same filtering approach applied to series and TV content\n\nGitHub · Live App\n\n\n\nClick to launch the app\n\n\n\n\nLast.fm Global Trends\n\nPython Shiny Last.fm API\n\nInteractive dashboard connecting to the Last.fm API to explore global and country-level music trends in real time.\n\nReal-time Last.fm API integration via pylast\nGlobal and country-level trend drill-down\n\nGitHub · Live App\n\n\n\nClick to launch the app\n\n\n\n\nSpotify Search App\n\nR Shiny Rhino Spotify API\n\nSearch for artists, explore their profiles, top tracks, and related artists via the Spotify API. Includes genre-based discovery and network visualization of artist relationships.\n\nArtist profiles with top tracks and related-artist network graph\nGenre-based discovery with popularity and follower metrics\nAPI caching via memoise; built with the enterprise-grade Rhino framework\n\nGitHub · Live App\n\n\n\nClick to launch the app\n\n\n\n\nDatabricks Ingestion Lakehouse\n\nPython PySpark Databricks Delta Lake Docker\n\nEnd-to-end data ingestion pipeline using NYC TLC Yellow Taxi data, organised into a Bronze → Silver → Gold medallion architecture. Runs both locally via Docker (PySpark + Delta Lake) and on Databricks (Unity Catalog + SQL Warehouse).\n\nBronze: raw Parquet ingestion into Delta tables with metadata\nSilver: cleaning, filtering, and enrichment with derived columns\nGold: analytics-ready aggregations for trip volume, revenue, zone performance, and time patterns\nLive analytics report published via GitHub Pages\n\nGitHub · Live Report\n\n\n\nClick to view the live report\n\n\n\n\nAirflow DBT DuckDB Pipeline\n\nPython Airflow DBT DuckDB\n\nA modern ELT pipeline orchestrating DBT transformations with Apache Airflow and DuckDB, including automated data quality tests and lineage documentation.\n\nAirflow for scheduling and orchestration\nDBT for SQL-based transformations with built-in testing\nDuckDB as a lightweight embedded analytical database\n\nGitHub"
   },
   {
     "objectID": "index.html#skills",
     "href": "index.html#skills",
-    "title": "About Me",
+    "title": "Tiago Adria Nunes",
     "section": "Skills",
-    "text": "Skills\nLanguages & Frameworks R (Shiny, Quarto, Tidyverse, ggplot2, SparkR) · Python (Shiny, Pandas, NumPy, Matplotlib, PySpark) · SQL\nData & Analytics Data modeling · ELT/ETL pipelines · DBT · DuckDB · Power BI · Tableau\nProcess & Delivery Business Analysis · BPMN · UML · Scrum · Kanban · Jira · Confluence"
+    "text": "Skills\n\nLanguages & Frameworks\nR Shiny Quarto Tidyverse ggplot2 SparkR Python PySpark Pandas NumPy Matplotlib SQL\n\n\nData & Analytics\nData Modeling ELT/ETL DBT DuckDB Delta Lake Power BI Tableau\n\n\nProcess & Delivery\nBusiness Analysis BPMN UML Scrum Kanban Jira Confluence"
   },
   {
     "objectID": "index.html#education",
     "href": "index.html#education",
-    "title": "About Me",
+    "title": "Tiago Adria Nunes",
     "section": "Education",
-    "text": "Education\n\n2023–2024 — Postgraduate in Software Engineering — Descomplica\n2006–2009 — B.A. in Business Administration — Anhanguera"
+    "text": "Education\n\n2023–2024 - Postgraduate in Software Engineering - Descomplica\n2006–2009 - B.A. in Business Administration - Anhanguera"
   },
   {
     "objectID": "index.html#certifications",
     "href": "index.html#certifications",
-    "title": "About Me",
+    "title": "Tiago Adria Nunes",
     "section": "Certifications",
-    "text": "Certifications\n\nGoogle Advanced Data Analytics Professional Certificate — Coursera, 2023\nData Science: Foundations using R — Coursera, 2023\nGoogle Data Analytics Professional Certificate — Coursera, 2022\nSoftware Product Management Specialization — Coursera, 2018"
+    "text": "Certifications\n\nGoogle Advanced Data Analytics Professional Certificate - Coursera, 2023\nData Science: Foundations using R - Coursera, 2023\nGoogle Data Analytics Professional Certificate - Coursera, 2022\nSoftware Product Management Specialization - Coursera, 2018"
   },
   {
     "objectID": "index.html#contact",
     "href": "index.html#contact",
-    "title": "About Me",
+    "title": "Tiago Adria Nunes",
     "section": "Contact",
     "text": "Contact\ntiagoadrianunes@gmail.com · LinkedIn · GitHub"
   }

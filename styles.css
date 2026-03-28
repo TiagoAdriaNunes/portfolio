@@ -1,0 +1,171 @@
+/* ── Fonts ─────────────────────────────────────────────── */
+/* Loaded via <link> in includes/head.html for better performance */
+
+:root {
+  --accent: #1d3557;
+  --accent-light: #e8edf3;
+  --font-main: 'Inter', sans-serif;
+}
+
+/* ── Smooth scroll ─────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main) !important;
+}
+
+/* ── Scroll fade-in animations ─────────────────────────── */
+.fade-in {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Accent on headings & links ────────────────────────── */
+h2 {
+  color: var(--accent);
+  padding-bottom: 0.4rem;
+  border-bottom: 3px solid var(--accent);
+  display: inline-block;
+  margin-bottom: 1.2rem;
+}
+
+h3 {
+  color: var(--accent);
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: #457b9d;
+}
+
+
+/* ── Navbar ────────────────────────────────────────────── */
+.navbar {
+  border-bottom: 3px solid var(--accent);
+}
+
+/* ── About / trestles hero ─────────────────────────────── */
+#me {
+  margin-bottom: 2rem;
+}
+
+.quarto-about-trestles .about-image {
+  width: 180px !important;
+  height: 180px !important;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 1rem auto;
+  display: block;
+  box-shadow: 0 4px 16px rgba(29, 53, 87, 0.2);
+}
+
+.quarto-about-trestles .about-entity {
+  text-align: center;
+}
+
+.quarto-about-trestles h1.title {
+  display: none;
+}
+
+.quarto-about-trestles .about-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quarto-about-trestles .about-link {
+  border-color: var(--accent) !important;
+  color: var(--accent) !important;
+}
+
+.quarto-about-trestles .about-link:hover {
+  background-color: var(--accent) !important;
+  color: #ffffff !important;
+}
+
+/* ── Project cards ─────────────────────────────────────── */
+.project-card {
+  border: 1px solid #dde3eb;
+  border-top: 3px solid var(--accent);
+  border-radius: 10px;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease, transform 0.2s ease, opacity 0.5s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 6px 20px rgba(29, 53, 87, 0.12);
+  transform: translateY(-2px);
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.project-card img {
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+.gif-preview {
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.gif-preview:hover {
+  opacity: 0.95;
+}
+
+/* ── Tech & skill badges ───────────────────────────────── */
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.badge {
+  background-color: var(--accent);
+  color: #ffffff !important;
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+/* ── Skills groups ─────────────────────────────────────── */
+.skills-group {
+  margin-bottom: 1.25rem;
+}
+
+.skills-group p {
+  margin-bottom: 0.5rem;
+}
+
+.skills-group .badge {
+  margin-bottom: 0.3rem;
+}
+
+/* ── TOC ───────────────────────────────────────────────── */
+#TOC a {
+  color: var(--accent);
+}
+
+#TOC a:hover {
+  color: #457b9d;
+}
