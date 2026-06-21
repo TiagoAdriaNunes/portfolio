@@ -110,16 +110,32 @@ End-to-end data ingestion pipeline using NYC TLC Yellow Taxi data, organised int
 ### [Airflow DBT DuckDB Pipeline](https://github.com/TiagoAdriaNunes/airflow-dbt-duckdb){target="_blank"}
 
 ::: {.badges}
-[Python]{.badge} [Airflow]{.badge} [DBT]{.badge} [DuckDB]{.badge}
+[Python]{.badge} [Airflow]{.badge} [DBT]{.badge} [DuckDB]{.badge} [DuckLake]{.badge} [Grafana]{.badge} [Prometheus]{.badge} [Docker]{.badge}
 :::
 
-A modern ELT pipeline orchestrating DBT transformations with Apache Airflow and DuckDB, including automated data quality tests and lineage documentation.
+End-to-end data pipeline orchestrating dbt transformations via Astronomer Cosmos on Apache Airflow, with DuckDB + DuckLake as the analytical engine and open table format, backed by a full observability stack.
 
-- Airflow for scheduling and orchestration
-- DBT for SQL-based transformations with built-in testing
-- DuckDB as a lightweight embedded analytical database
+- Daily DAG: TPC-H data generation → dbt Cosmos task group (one Airflow task per model) → staging and mart layers
+- DuckLake open table format with Parquet data files and PostgreSQL catalog
+- Observability: ducklake-metrics exporter → OpenTelemetry Collector → Prometheus → Grafana dashboards
 
 [GitHub](https://github.com/TiagoAdriaNunes/airflow-dbt-duckdb){target="_blank"}
+:::
+
+::: {.project-card}
+### [dbt + pg\_duckdb](https://github.com/TiagoAdriaNunes/dbt_pg_duckdb){target="_blank"}
+
+::: {.badges}
+[Python]{.badge} [DBT]{.badge} [DuckDB]{.badge} [PostgreSQL]{.badge} [Docker]{.badge}
+:::
+
+Dockerized PostgreSQL with the pg_duckdb extension and a dbt project for analytics transformations on TPC-H benchmark data. Every query is routed through DuckDB's vectorized columnar engine via an `on-run-start` hook.
+
+- Staging → Mart → Snapshot layers with enforced model contracts and SCD2 history
+- Incremental models, automated data quality tests, and lineage DAG
+- Live dbt docs auto-published to GitHub Pages on every push to main
+
+[GitHub](https://github.com/TiagoAdriaNunes/dbt_pg_duckdb){target="_blank"} · [Live Docs](https://tiagoadrianunes.github.io/dbt_pg_duckdb/){target="_blank"}
 :::
 
 ## Skills

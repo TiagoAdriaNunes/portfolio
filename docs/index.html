@@ -241,15 +241,28 @@ ul.task-list li input[type="checkbox"] {
 <section id="airflow-dbt-duckdb-pipeline" class="level3 project-card">
 <h3 data-anchor-id="airflow-dbt-duckdb-pipeline"><a href="https://github.com/TiagoAdriaNunes/airflow-dbt-duckdb" target="_blank">Airflow DBT DuckDB Pipeline</a></h3>
 <div class="badges">
-<p><span class="badge">Python</span> <span class="badge">Airflow</span> <span class="badge">DBT</span> <span class="badge">DuckDB</span></p>
+<p><span class="badge">Python</span> <span class="badge">Airflow</span> <span class="badge">DBT</span> <span class="badge">DuckDB</span> <span class="badge">DuckLake</span> <span class="badge">Grafana</span> <span class="badge">Prometheus</span> <span class="badge">Docker</span></p>
 </div>
-<p>A modern ELT pipeline orchestrating DBT transformations with Apache Airflow and DuckDB, including automated data quality tests and lineage documentation.</p>
+<p>End-to-end data pipeline orchestrating dbt transformations via Astronomer Cosmos on Apache Airflow, with DuckDB + DuckLake as the analytical engine and open table format, backed by a full observability stack.</p>
 <ul>
-<li>Airflow for scheduling and orchestration</li>
-<li>DBT for SQL-based transformations with built-in testing</li>
-<li>DuckDB as a lightweight embedded analytical database</li>
+<li>Daily DAG: TPC-H data generation → dbt Cosmos task group (one Airflow task per model) → staging and mart layers</li>
+<li>DuckLake open table format with Parquet data files and PostgreSQL catalog</li>
+<li>Observability: ducklake-metrics exporter → OpenTelemetry Collector → Prometheus → Grafana dashboards</li>
 </ul>
 <p><a href="https://github.com/TiagoAdriaNunes/airflow-dbt-duckdb" target="_blank">GitHub</a></p>
+</section>
+<section id="dbt-pg_duckdb" class="level3 project-card">
+<h3 data-anchor-id="dbt-pg_duckdb"><a href="https://github.com/TiagoAdriaNunes/dbt_pg_duckdb" target="_blank">dbt + pg_duckdb</a></h3>
+<div class="badges">
+<p><span class="badge">Python</span> <span class="badge">DBT</span> <span class="badge">DuckDB</span> <span class="badge">PostgreSQL</span> <span class="badge">Docker</span></p>
+</div>
+<p>Dockerized PostgreSQL with the pg_duckdb extension and a dbt project for analytics transformations on TPC-H benchmark data. Every query is routed through DuckDB’s vectorized columnar engine via an <code>on-run-start</code> hook.</p>
+<ul>
+<li>Staging → Mart → Snapshot layers with enforced model contracts and SCD2 history</li>
+<li>Incremental models, automated data quality tests, and lineage DAG</li>
+<li>Live dbt docs auto-published to GitHub Pages on every push to main</li>
+</ul>
+<p><a href="https://github.com/TiagoAdriaNunes/dbt_pg_duckdb" target="_blank">GitHub</a> · <a href="https://tiagoadrianunes.github.io/dbt_pg_duckdb/" target="_blank">Live Docs</a></p>
 </section>
 </section>
 <section id="skills" class="level2">
