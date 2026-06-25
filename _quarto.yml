@@ -19,7 +19,7 @@ website:
 
 format:
   html:
-    theme: darkly
+    theme: flatly
     toc: true
     toc_depth: 2
     toc-title: On this page
