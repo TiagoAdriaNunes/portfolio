@@ -1,0 +1,7 @@
+# Tiago Adria Nunes
+
+> Portfolio of Tiago Adria Nunes, R/Shiny developer and data engineer: Shiny dashboards, dbt, DuckDB, Airflow, and Databricks projects.
+
+## Pages
+
+- [Tiago Adria Nunes](https://tiagoadrianunes.github.io/portfolio/index.llms.md)

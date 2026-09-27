@@ -4,6 +4,9 @@ project:
   
 website:
   title: "Tiago Adria Nunes"
+  description: "Portfolio of Tiago Adria Nunes, R/Shiny developer and data engineer: Shiny dashboards, dbt, DuckDB, Airflow, and Databricks projects."
+  site-url: https://tiagoadrianunes.github.io/portfolio/
+  llms-txt: true
   navbar:
     left:
       - href: index.qmd
