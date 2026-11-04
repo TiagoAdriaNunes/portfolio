@@ -47,5 +47,5 @@ The output is written to the `docs/` folder, which is the source configured for 
 ## Contact
 
 -   Email: [tiagoadrianunes@gmail.com](mailto:tiagoadrianunes@gmail.com)
--   LinkedIn: [Tiago Adria Nunes](https://www.linkedin.com/in/tiago-adria-nunes/)
+-   LinkedIn: [Tiago Adria Nunes](https://www.linkedin.com/in/tiagoadrianunes/)
 -   GitHub: [Tiago Adria Nunes](https://github.com/TiagoAdriaNunes)

@@ -10,7 +10,7 @@ about:
       href: mailto:tiagoadrianunes@gmail.com
     - icon: linkedin
       text: LinkedIn
-      href: https://www.linkedin.com/in/tiago-adria-nunes/
+      href: https://www.linkedin.com/in/tiagoadrianunes/
       target: _blank
     - icon: github
       text: GitHub
@@ -172,4 +172,4 @@ Dockerized PostgreSQL with the pg_duckdb extension and a dbt project for analyti
 
 ## Contact
 
-[tiagoadrianunes@gmail.com](mailto:tiagoadrianunes@gmail.com) · [LinkedIn](https://www.linkedin.com/in/tiago-adria-nunes/){target="_blank"} · [GitHub](https://github.com/TiagoAdriaNunes){target="_blank"}
+[tiagoadrianunes@gmail.com](mailto:tiagoadrianunes@gmail.com) · [LinkedIn](https://www.linkedin.com/in/tiagoadrianunes/){target="_blank"} · [GitHub](https://github.com/TiagoAdriaNunes){target="_blank"}

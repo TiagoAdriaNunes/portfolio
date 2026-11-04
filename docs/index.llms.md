@@ -2,7 +2,7 @@
 
 # Tiago Adria Nunes
 
-[ Email](mailto:tiagoadrianunes@gmail.com) [ LinkedIn](https://www.linkedin.com/in/tiago-adria-nunes/) [ GitHub](https://github.com/TiagoAdriaNunes)
+[ Email](mailto:tiagoadrianunes@gmail.com) [ LinkedIn](https://www.linkedin.com/in/tiagoadrianunes/) [ GitHub](https://github.com/TiagoAdriaNunes)
 
 Hi, I’m **Tiago Adria Nunes** - an **R/Shiny Developer** with 10+ years in IT, specializing in data-driven web applications, interactive dashboards, and process automation. I’ve led development teams across **banking**, **healthcare**, **education**, and **insurance**, and I bring the same analytical rigour to both technical and business problems.
 
@@ -123,4 +123,4 @@ Business Analysis BPMN UML Scrum Kanban Jira Confluence
 
 ## Contact
 
-<tiagoadrianunes@gmail.com> · [LinkedIn](https://www.linkedin.com/in/tiago-adria-nunes/) · [GitHub](https://github.com/TiagoAdriaNunes)
+<tiagoadrianunes@gmail.com> · [LinkedIn](https://www.linkedin.com/in/tiagoadrianunes/) · [GitHub](https://github.com/TiagoAdriaNunes)
