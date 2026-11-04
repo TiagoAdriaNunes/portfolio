@@ -24,7 +24,7 @@ I develop and maintain analytical web applications for the Data Science team at 
 :::
 
 ::: {.hero-stats}
-[[10+]{.stat-value} [years in IT]{.stat-label}]{.stat} [[5]{.stat-value} [industries]{.stat-label}]{.stat} [[6]{.stat-value} [featured projects]{.stat-label}]{.stat}
+[[10+]{.stat-value} [years in IT]{.stat-label}]{.stat} [[5]{.stat-value} [industries]{.stat-label}]{.stat} [[8]{.stat-value} [featured projects]{.stat-label}]{.stat}
 :::
 :::
 
@@ -61,6 +61,32 @@ Shiny apps and data engineering pipelines I've built. Hover a card to play its d
 :::
 
 ::: {.project-grid}
+
+::: {.project-card}
+[![](img/shiny_openrouter.gif){fig-alt="shinychat + OpenRouter chatbot demo"}](https://shinychat-openrouter.fly.dev/){.project-media target="_blank" aria-label="Open the shinychat + OpenRouter live app"}
+
+### [shinychat + OpenRouter](https://github.com/TiagoAdriaNunes/shinychat-openrouter){target="_blank"}
+
+::: {.chips}
+[R]{.chip} [Shiny]{.chip} [shinychat]{.chip} [ellmer]{.chip} [OpenRouter]{.chip} [box]{.chip} [Fly.io]{.chip}
+:::
+
+Streaming AI chatbot built with R/Shiny, shinychat, and ellmer, running on free OpenRouter models. An Agent mode turns it into a data agent that answers questions from World Bank and IMF indicators.
+
+<details>
+<summary>Highlights</summary>
+
+- Live model picker listing OpenRouter's free models, ranked by intelligence index; switching models keeps the conversation
+- Agent mode: a commons data agent over World Development Indicators and IMF DataMapper data, marking each answer as trusted, cited, or untrusted
+- Answers are only shown when the model actually looked the data up, so it doesn't show made-up figures
+- Modular code with box and renv, testthat tests with mocked API calls, and Docker deployment on Fly.io
+
+</details>
+
+::: {.project-links}
+[<i class="bi bi-github"></i> Code](https://github.com/TiagoAdriaNunes/shinychat-openrouter){target="_blank"} [<i class="bi bi-box-arrow-up-right"></i> Live app](https://shinychat-openrouter.fly.dev/){target="_blank"}
+:::
+:::
 
 ::: {.project-card}
 [![](img/Imdb_top_5000.gif){fig-alt="IMDb Top 5000 app demo"}](https://tiagoadrianunes.shinyapps.io/IMDB_TOP_5000/){.project-media target="_blank" aria-label="Open the IMDb Top 5000 live app"}
@@ -107,6 +133,47 @@ Interactive dashboard connecting to the Last.fm API to explore global and countr
 
 ::: {.project-links}
 [<i class="bi bi-github"></i> Code](https://github.com/TiagoAdriaNunes/lastfm-global-trends){target="_blank"} [<i class="bi bi-box-arrow-up-right"></i> Live app](https://tiagoadrianunes.shinyapps.io/lastfm-global-trends/){target="_blank"}
+:::
+:::
+
+::: {.project-card}
+```{=html}
+<a class="project-media project-terminal" href="https://lastfm-analytics-api-production.up.railway.app/docs" target="_blank" aria-label="Open the Last.fm Analytics API docs">
+<span class="terminal-bar">lastfm-analytics-api</span>
+<pre><span class="t-method">GET</span> /artists/similar/network?artist=Radiohead
+<span class="t-ok">200 OK</span>
+{
+  <span class="t-key">"artist"</span>: <span class="t-str">"Radiohead"</span>,
+  <span class="t-key">"nodes"</span>: [
+    {<span class="t-key">"id"</span>: <span class="t-num">1</span>, <span class="t-key">"name"</span>: <span class="t-str">"Radiohead"</span>, <span class="t-key">"level"</span>: <span class="t-num">0</span>},
+    {<span class="t-key">"id"</span>: <span class="t-num">2</span>, <span class="t-key">"name"</span>: <span class="t-str">"Thom Yorke"</span>, <span class="t-key">"level"</span>: <span class="t-num">1</span>},
+    <span class="t-muted">…</span>
+  ],
+  <span class="t-key">"edges"</span>: [{<span class="t-key">"from"</span>: <span class="t-num">1</span>, <span class="t-key">"to"</span>: <span class="t-num">2</span>, <span class="t-key">"weight"</span>: <span class="t-num">1.0</span>}]
+}</pre>
+</a>
+```
+
+### [Last.fm Analytics API](https://github.com/TiagoAdriaNunes/lastfm-analytics-api){target="_blank"}
+
+::: {.chips}
+[Python]{.chip} [FastAPI]{.chip} [Last.fm API]{.chip} [uv]{.chip} [GitHub Actions]{.chip} [Railway]{.chip}
+:::
+
+FastAPI service for music analytics on top of the Last.fm API: search, similar artists and tracks, tags, and similar-artist networks ready for graph visualisation.
+
+<details>
+<summary>Highlights</summary>
+
+- Endpoints for artists, albums, tracks, and tags, including a similar-artist network (nodes + edges) up to 3 levels deep
+- One shared rate limiter for all Last.fm calls, with 1-hour caching, shared in-flight requests, and retries with backoff
+- API-key authentication, rate-limited public example endpoints, and structured JSON logging with loguru
+- CI on GitHub Actions and deployed on Railway with interactive docs
+
+</details>
+
+::: {.project-links}
+[<i class="bi bi-github"></i> Code](https://github.com/TiagoAdriaNunes/lastfm-analytics-api){target="_blank"} [<i class="bi bi-box-arrow-up-right"></i> API docs](https://lastfm-analytics-api-production.up.railway.app/docs){target="_blank"}
 :::
 :::
 
