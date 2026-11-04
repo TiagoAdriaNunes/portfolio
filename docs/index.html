@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.11.9">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -31,33 +31,23 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
+<link href="./favicon.svg" rel="icon" type="image/svg+xml">
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-1562915e16a7bb36b6a85835f6e478fd.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-3fa94827e3dc895fff3ce93c1207c1b4.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-1562915e16a7bb36b6a85835f6e478fd.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-8cf93c9ab2a2e11673e6e214f13a05bd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5c6ab220739567afe242c34ddca6b6ad.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-86185a8731379fcc0f56a50a09866b2c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-5c6ab220739567afe242c34ddca6b6ad.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -73,239 +63,527 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          toggle.setAttribute("aria-checked", alternate ? "true" : "false");
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455).
+    // Not run on load: stylesheets are set before first paint there, and
+    // scrolling would undo the scroll to a URL fragment (#14973).
+    // The one pixel nudge keeps the reader where they were.
+    const refreshSafariScrollbar = () => {
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        const scrollY = window.scrollY;
+        window.scrollTo(0, scrollY > 0 ? scrollY - 1 : 1);
+        setTimeout(() => {
+          window.scrollTo(0, scrollY);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      refreshSafariScrollbar();
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      refreshSafariScrollbar();
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./favicon.svg" alt="TN monogram" class="navbar-logo light-content">
+    <img src="./favicon.svg" alt="TN monogram" class="navbar-logo dark-content">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Tiago Adria Nunes</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./#about"> 
 <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./#projects"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./#skills"> 
+<span class="menu-text">Skills</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./#education"> 
+<span class="menu-text">Education</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./#contact"> 
+<span class="menu-text">Contact</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-    <a href="https://www.linkedin.com/in/tiagoadrianunes/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
-    <a href="https://github.com/TiagoAdriaNunes/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+            <div class="quarto-navbar-tools tools-wide">
+    <a href="https://www.linkedin.com/in/tiagoadrianunes/" title="" class="quarto-navigation-tool px-1" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+    <a href="https://github.com/TiagoAdriaNunes/" title="" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
+  <button type="button" role="switch" aria-checked="false" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="bi"></i></button>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul class="collapse">
-  <li><a href="#projects" id="toc-projects" class="nav-link active" data-scroll-target="#projects">Projects</a></li>
-  <li><a href="#skills" id="toc-skills" class="nav-link" data-scroll-target="#skills">Skills</a></li>
-  <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
-  <li><a href="#certifications" id="toc-certifications" class="nav-link" data-scroll-target="#certifications">Certifications</a></li>
-  <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact">Contact</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content" tabindex="-1"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">Tiago Adria Nunes</h1></header>
 
 
+<header id="title-block-header">
 
 
-<div class="quarto-about-trestles">
-  <div class="about-entity">
-    <img src="img/profile.jpg" class="about-image
-  rounded " style="width: 20em;">
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Tiago Adria Nunes</h1>
-</div>
-<div class="quarto-title-meta">
-  </div>
 </header>
-    <div class="about-links">
-  <a href="mailto:tiagoadrianunes@gmail.com" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">Email</span>
-  </a>
-  <a href="https://www.linkedin.com/in/tiagoadrianunes/" class="about-link" rel="" target="_blank">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com/TiagoAdriaNunes" class="about-link" rel="" target="_blank">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><div id="me">
-<p>Hi, I’m <strong>Tiago Adria Nunes</strong> - an <strong>R/Shiny Developer</strong> with 10+ years in IT, specializing in data-driven web applications, interactive dashboards, and process automation. I’ve led development teams across <strong>banking</strong>, <strong>healthcare</strong>, <strong>education</strong>, and <strong>insurance</strong>, and I bring the same analytical rigour to both technical and business problems.</p>
-</div></div>
-</div>
 
+
+<div class="hero">
+<div class="hero-copy">
+<p><span class="eyebrow">R/Shiny Developer and Analytics Engineer</span></p>
+<section id="tiago-adria-nunes" class="level1 unlisted">
+<h1 class="unlisted">Tiago Adria Nunes</h1>
+<div class="hero-tagline">
+<p>I build production <span class="gradient-text">R/Shiny applications</span> that turn complex data into decisions people actually use.</p>
+</div>
+<div class="hero-intro">
+<p>I develop and maintain analytical web applications for the Data Science team at <strong>Firebird Music</strong>, backed by about 10 years as an IT Business Analyst and Systems Analyst across <strong>banking</strong>, <strong>healthcare</strong>, <strong>insurance</strong>, <strong>education</strong>, and <strong>investments</strong>.</p>
+</div>
+<div class="hero-actions">
+<p><a href="#projects" class="pf-btn pf-btn-primary">View projects <i class="bi bi-arrow-down-short"></i></a> <a href="mailto:tiagoadrianunes@gmail.com" class="pf-btn"><i class="bi bi-envelope"></i> Email me</a> <a href="https://www.linkedin.com/in/tiagoadrianunes/" class="pf-btn pf-btn-icon" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a> <a href="https://github.com/TiagoAdriaNunes" class="pf-btn pf-btn-icon" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a></p>
+</div>
+<div class="hero-stats">
+<p><span class="stat"><span class="stat-value">10+</span> <span class="stat-label">years in IT</span></span> <span class="stat"><span class="stat-value">5</span> <span class="stat-label">industries</span></span> <span class="stat"><span class="stat-value">6</span> <span class="stat-label">featured projects</span></span></p>
+</div>
+</section>
+</div>
+<div class="hero-photo">
+<p><img src="img/profile.jpg" class="img-fluid" alt="Portrait of Tiago Adria Nunes"></p>
+</div>
+</div>
+<section id="about" class="level2">
+<h2 data-anchor-id="about">About</h2>
+<div class="about-grid">
+<div class="about-text">
+<p>I’m an R/Shiny Developer at <strong>Firebird Music</strong>, where I develop and maintain analytical web applications for the Data Science team. My work covers the full path from data to user: modular Shiny apps built on Rhino and box, data from BigQuery and PostgreSQL, dbt and Airflow workflows, DuckDB for fast processing, automated tests with testthat, and Docker-based CI/CD deployments.</p>
+<p>Before moving into development, I spent about 10 years as an IT Business Analyst and Systems Analyst across banking (Bradesco, Caixa Econômica Federal), healthcare (Unimed), insurance, education, and investments. That background is my edge: I understand business rules, work well with stakeholders, and translate requirements into data products that fit how people actually work.</p>
+<p>I’m interested in building scalable, maintainable data applications and analytics platforms that combine software engineering practices with modern data tooling.</p>
+</div>
+<section id="career-path" class="level3 timeline-card">
+<h3 data-anchor-id="career-path"><i class="bi bi-briefcase"></i> Career path</h3>
+<div class="timeline">
+<ul>
+<li><span class="tl-date">Now</span> <span class="tl-title">R/Shiny Developer</span> <span class="tl-org">Firebird Music · Data Science team</span></li>
+<li><span class="tl-date">About 10 years</span> <span class="tl-title">IT Business Analyst &amp; Systems Analyst</span> <span class="tl-org">Bradesco, Caixa Econômica Federal, Unimed, plus insurance, education, and investments</span></li>
+</ul>
+</div>
+</section>
+</div>
+</section>
 <section id="projects" class="level2">
 <h2 data-anchor-id="projects">Projects</h2>
-<section id="imdb-top-5000" class="level3 project-card">
+<div class="section-lead">
+<p>Shiny apps and data engineering pipelines I’ve built. Hover a card to play its demo.</p>
+</div>
+<div class="project-grid">
+<div class="project-card">
+<p><a href="https://tiagoadrianunes.shinyapps.io/IMDB_TOP_5000/" class="project-media" target="_blank" aria-label="Open the IMDb Top 5000 live app"><img src="img/Imdb_top_5000.gif" class="img-fluid" alt="IMDb Top 5000 app demo"></a></p>
+<section id="imdb-top-5000" class="level3">
 <h3 data-anchor-id="imdb-top-5000"><a href="https://github.com/TiagoAdriaNunes/imdb_top_5000" target="_blank">IMDb Top 5000</a></h3>
-<div class="badges">
-<p><span class="badge">R</span> <span class="badge">Shiny</span> <span class="badge">ShinyApps.io</span></p>
+<div class="chips">
+<p><span class="chip">R</span> <span class="chip">Shiny</span> <span class="chip">ShinyApps.io</span></p>
 </div>
 <p>Interactive dashboard showcasing the top 5000 movies from IMDb, sourced live from <a href="https://datasets.imdbws.com/" target="_blank">IMDb datasets</a>. Filter by title, director, genre, year, rank, rating, and vote count.</p>
+<details>
+<summary>
+Highlights
+</summary>
 <ul>
 <li>Filter by title, director, genre, year, rank, rating, and votes</li>
 <li>TV Shows edition: <a href="https://github.com/TiagoAdriaNunes/imdb_top_5000_tv_shows" target="_blank">IMDb Top 5000 TV Shows</a> - same filtering approach applied to series and TV content</li>
 </ul>
-<p><a href="https://github.com/TiagoAdriaNunes/imdb_top_5000" target="_blank">GitHub</a> · <a href="https://tiagoadrianunes.shinyapps.io/IMDB_TOP_5000/" target="_blank">Live App</a></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="https://tiagoadrianunes.shinyapps.io/IMDB_TOP_5000/" target="_blank"><img src="img/Imdb_top_5000.gif" title="IMDb Top 5000" class="img-fluid figure-img" target="_blank" alt="IMDb Top 5000 app demo" width="1280"></a></p>
-<figcaption>Click to launch the app</figcaption>
-</figure>
+</details>
+<div class="project-links">
+<p><a href="https://github.com/TiagoAdriaNunes/imdb_top_5000" target="_blank"><i class="bi bi-github"></i> Code</a> <a href="https://tiagoadrianunes.shinyapps.io/IMDB_TOP_5000/" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Live app</a></p>
 </div>
 </section>
-<section id="last.fm-global-trends" class="level3 project-card">
+</div>
+<div class="project-card">
+<p><a href="https://tiagoadrianunes.shinyapps.io/lastfm-global-trends/" class="project-media" target="_blank" aria-label="Open the Last.fm Global Trends live app"><img src="img/lastfm_app.gif" class="img-fluid" alt="Last.fm Global Trends app demo"></a></p>
+<section id="last.fm-global-trends" class="level3">
 <h3 data-anchor-id="last.fm-global-trends"><a href="https://github.com/TiagoAdriaNunes/lastfm-global-trends" target="_blank">Last.fm Global Trends</a></h3>
-<div class="badges">
-<p><span class="badge">Python</span> <span class="badge">Shiny</span> <span class="badge">Last.fm API</span></p>
+<div class="chips">
+<p><span class="chip">Python</span> <span class="chip">Shiny</span> <span class="chip">Last.fm API</span></p>
 </div>
 <p>Interactive dashboard connecting to the Last.fm API to explore global and country-level music trends in real time.</p>
+<details>
+<summary>
+Highlights
+</summary>
 <ul>
 <li>Real-time Last.fm API integration via pylast</li>
 <li>Global and country-level trend drill-down</li>
 </ul>
-<p><a href="https://github.com/TiagoAdriaNunes/lastfm-global-trends" target="_blank">GitHub</a> · <a href="https://tiagoadrianunes.shinyapps.io/lastfm-global-trends/" target="_blank">Live App</a></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="https://tiagoadrianunes.shinyapps.io/lastfm-global-trends/" target="_blank"><img src="img/lastfm_app.gif" title="Last.fm Global Trends" class="img-fluid figure-img" target="_blank" alt="Last.fm Global Trends app demo" width="1280"></a></p>
-<figcaption>Click to launch the app</figcaption>
-</figure>
+</details>
+<div class="project-links">
+<p><a href="https://github.com/TiagoAdriaNunes/lastfm-global-trends" target="_blank"><i class="bi bi-github"></i> Code</a> <a href="https://tiagoadrianunes.shinyapps.io/lastfm-global-trends/" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Live app</a></p>
 </div>
 </section>
-<section id="spotify-search-app" class="level3 project-card">
+</div>
+<div class="project-card">
+<p><a href="https://tiagoadrianunes.shinyapps.io/shiny_spotify/" class="project-media" target="_blank" aria-label="Open the Spotify Search live app"><img src="img/shiny_spotify.gif" class="img-fluid" alt="Spotify Search App demo"></a></p>
+<section id="spotify-search-app" class="level3">
 <h3 data-anchor-id="spotify-search-app"><a href="https://github.com/TiagoAdriaNunes/shiny_spotify" target="_blank">Spotify Search App</a></h3>
-<div class="badges">
-<p><span class="badge">R</span> <span class="badge">Shiny</span> <span class="badge">Rhino</span> <span class="badge">Spotify API</span></p>
+<div class="chips">
+<p><span class="chip">R</span> <span class="chip">Shiny</span> <span class="chip">Rhino</span> <span class="chip">Spotify API</span></p>
 </div>
 <p>Search for artists, explore their profiles, top tracks, and related artists via the Spotify API. Includes genre-based discovery and network visualization of artist relationships.</p>
+<details>
+<summary>
+Highlights
+</summary>
 <ul>
 <li>Artist profiles with top tracks and related-artist network graph</li>
 <li>Genre-based discovery with popularity and follower metrics</li>
 <li>API caching via memoise; built with the enterprise-grade Rhino framework</li>
 </ul>
-<p><a href="https://github.com/TiagoAdriaNunes/shiny_spotify" target="_blank">GitHub</a> · <a href="https://tiagoadrianunes.shinyapps.io/shiny_spotify/" target="_blank">Live App</a></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="https://tiagoadrianunes.shinyapps.io/shiny_spotify/" target="_blank"><img src="img/shiny_spotify.gif" title="Spotify Search App" class="img-fluid figure-img" target="_blank" alt="Spotify Search App demo" width="1280"></a></p>
-<figcaption>Click to launch the app</figcaption>
-</figure>
+</details>
+<div class="project-links">
+<p><a href="https://github.com/TiagoAdriaNunes/shiny_spotify" target="_blank"><i class="bi bi-github"></i> Code</a> <a href="https://tiagoadrianunes.shinyapps.io/shiny_spotify/" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Live app</a></p>
 </div>
 </section>
-<section id="databricks-ingestion-lakehouse" class="level3 project-card">
+</div>
+<div class="project-card">
+<p><a href="https://tiagoadrianunes.github.io/databricks-ingestion-lakehouse/" class="project-media" target="_blank" aria-label="Open the Databricks Ingestion Lakehouse live report"><img src="img/lake.gif" class="img-fluid" alt="Databricks Ingestion Lakehouse pipeline report"></a></p>
+<section id="databricks-ingestion-lakehouse" class="level3">
 <h3 data-anchor-id="databricks-ingestion-lakehouse"><a href="https://github.com/TiagoAdriaNunes/databricks-ingestion-lakehouse" target="_blank">Databricks Ingestion Lakehouse</a></h3>
-<div class="badges">
-<p><span class="badge">Python</span> <span class="badge">PySpark</span> <span class="badge">Databricks</span> <span class="badge">Delta Lake</span> <span class="badge">Docker</span></p>
+<div class="chips">
+<p><span class="chip">Python</span> <span class="chip">PySpark</span> <span class="chip">Databricks</span> <span class="chip">Delta Lake</span> <span class="chip">Docker</span></p>
 </div>
 <p>End-to-end data ingestion pipeline using NYC TLC Yellow Taxi data, organised into a <strong>Bronze → Silver → Gold</strong> medallion architecture. Runs both locally via Docker (PySpark + Delta Lake) and on Databricks (Unity Catalog + SQL Warehouse).</p>
+<details>
+<summary>
+Highlights
+</summary>
 <ul>
 <li>Bronze: raw Parquet ingestion into Delta tables with metadata</li>
 <li>Silver: cleaning, filtering, and enrichment with derived columns</li>
 <li>Gold: analytics-ready aggregations for trip volume, revenue, zone performance, and time patterns</li>
 <li>Live analytics report published via GitHub Pages</li>
 </ul>
-<p><a href="https://github.com/TiagoAdriaNunes/databricks-ingestion-lakehouse" target="_blank">GitHub</a> · <a href="https://tiagoadrianunes.github.io/databricks-ingestion-lakehouse/" target="_blank">Live Report</a></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="https://tiagoadrianunes.github.io/databricks-ingestion-lakehouse/" target="_blank"><img src="img/lake.gif" title="Databricks Ingestion Lakehouse" class="img-fluid figure-img" target="_blank" alt="Databricks Ingestion Lakehouse pipeline report" width="1280"></a></p>
-<figcaption>Click to view the live report</figcaption>
-</figure>
+</details>
+<div class="project-links">
+<p><a href="https://github.com/TiagoAdriaNunes/databricks-ingestion-lakehouse" target="_blank"><i class="bi bi-github"></i> Code</a> <a href="https://tiagoadrianunes.github.io/databricks-ingestion-lakehouse/" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Live report</a></p>
 </div>
 </section>
-<section id="airflow-dbt-duckdb-pipeline" class="level3 project-card">
+</div>
+<div class="project-card">
+<div class="project-media project-diagram" aria-hidden="true">
+<p><span class="diagram-label">Pipeline</span> <span class="node">Airflow</span> <span class="arrow">→</span> <span class="node">dbt · Cosmos</span> <span class="arrow">→</span> <span class="node">DuckLake</span> <span class="arrow">→</span> <span class="node">Grafana</span></p>
+</div>
+<section id="airflow-dbt-duckdb-pipeline" class="level3">
 <h3 data-anchor-id="airflow-dbt-duckdb-pipeline"><a href="https://github.com/TiagoAdriaNunes/airflow-dbt-duckdb" target="_blank">Airflow DBT DuckDB Pipeline</a></h3>
-<div class="badges">
-<p><span class="badge">Python</span> <span class="badge">Airflow</span> <span class="badge">DBT</span> <span class="badge">DuckDB</span> <span class="badge">DuckLake</span> <span class="badge">Grafana</span> <span class="badge">Prometheus</span> <span class="badge">Docker</span></p>
+<div class="chips">
+<p><span class="chip">Python</span> <span class="chip">Airflow</span> <span class="chip">DBT</span> <span class="chip">DuckDB</span> <span class="chip">DuckLake</span> <span class="chip">Grafana</span> <span class="chip">Prometheus</span> <span class="chip">Docker</span></p>
 </div>
 <p>End-to-end data pipeline orchestrating dbt transformations via Astronomer Cosmos on Apache Airflow, with DuckDB + DuckLake as the analytical engine and open table format, backed by a full observability stack.</p>
+<details>
+<summary>
+Highlights
+</summary>
 <ul>
 <li>Daily DAG: TPC-H data generation → dbt Cosmos task group (one Airflow task per model) → staging and mart layers</li>
 <li>DuckLake open table format with Parquet data files and PostgreSQL catalog</li>
 <li>Observability: ducklake-metrics exporter → OpenTelemetry Collector → Prometheus → Grafana dashboards</li>
 </ul>
-<p><a href="https://github.com/TiagoAdriaNunes/airflow-dbt-duckdb" target="_blank">GitHub</a></p>
+</details>
+<div class="project-links">
+<p><a href="https://github.com/TiagoAdriaNunes/airflow-dbt-duckdb" target="_blank"><i class="bi bi-github"></i> Code</a></p>
+</div>
 </section>
-<section id="dbt-pg_duckdb" class="level3 project-card">
+</div>
+<div class="project-card">
+<div class="project-media project-diagram" aria-hidden="true">
+<p><span class="diagram-label">Lineage</span> <span class="node">Staging</span> <span class="arrow">→</span> <span class="node">Marts</span> <span class="arrow">→</span> <span class="node">Snapshots</span> <span class="arrow">→</span> <span class="node">dbt docs</span></p>
+</div>
+<section id="dbt-pg_duckdb" class="level3">
 <h3 data-anchor-id="dbt-pg_duckdb"><a href="https://github.com/TiagoAdriaNunes/dbt_pg_duckdb" target="_blank">dbt + pg_duckdb</a></h3>
-<div class="badges">
-<p><span class="badge">Python</span> <span class="badge">DBT</span> <span class="badge">DuckDB</span> <span class="badge">PostgreSQL</span> <span class="badge">Docker</span></p>
+<div class="chips">
+<p><span class="chip">Python</span> <span class="chip">DBT</span> <span class="chip">DuckDB</span> <span class="chip">PostgreSQL</span> <span class="chip">Docker</span></p>
 </div>
 <p>Dockerized PostgreSQL with the pg_duckdb extension and a dbt project for analytics transformations on TPC-H benchmark data. Every query is routed through DuckDB’s vectorized columnar engine via an <code>on-run-start</code> hook.</p>
+<details>
+<summary>
+Highlights
+</summary>
 <ul>
 <li>Staging → Mart → Snapshot layers with enforced model contracts and SCD2 history</li>
 <li>Incremental models, automated data quality tests, and lineage DAG</li>
 <li>Live dbt docs auto-published to GitHub Pages on every push to main</li>
 </ul>
-<p><a href="https://github.com/TiagoAdriaNunes/dbt_pg_duckdb" target="_blank">GitHub</a> · <a href="https://tiagoadrianunes.github.io/dbt_pg_duckdb/" target="_blank">Live Docs</a></p>
+</details>
+<div class="project-links">
+<p><a href="https://github.com/TiagoAdriaNunes/dbt_pg_duckdb" target="_blank"><i class="bi bi-github"></i> Code</a> <a href="https://tiagoadrianunes.github.io/dbt_pg_duckdb/" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Live docs</a></p>
+</div>
 </section>
+</div>
+</div>
 </section>
 <section id="skills" class="level2">
 <h2 data-anchor-id="skills">Skills</h2>
-<div class="skills-group">
-<p><strong>Languages &amp; Frameworks</strong></p>
-<p><span class="badge">R</span> <span class="badge">Shiny</span> <span class="badge">Quarto</span> <span class="badge">Tidyverse</span> <span class="badge">ggplot2</span> <span class="badge">SparkR</span> <span class="badge">Python</span> <span class="badge">PySpark</span> <span class="badge">Pandas</span> <span class="badge">NumPy</span> <span class="badge">Matplotlib</span> <span class="badge">SQL</span></p>
+<div class="section-lead">
+<p>What I do best, and the tools I use for each.</p>
 </div>
-<div class="skills-group">
-<p><strong>Data &amp; Analytics</strong></p>
-<p><span class="badge">Data Modeling</span> <span class="badge">ELT/ETL</span> <span class="badge">DBT</span> <span class="badge">DuckDB</span> <span class="badge">Delta Lake</span> <span class="badge">Power BI</span> <span class="badge">Tableau</span></p>
+<div class="skills-grid">
+<section id="rshiny-application-engineering" class="level3 skill-card">
+<h3 data-anchor-id="rshiny-application-engineering"><i class="bi bi-window-stack"></i> R/Shiny application engineering</h3>
+<div class="chips">
+<p><span class="chip">R</span> <span class="chip">Shiny</span> <span class="chip">Rhino</span> <span class="chip">box</span> <span class="chip">shiny.telemetry</span> <span class="chip">Tidyverse</span> <span class="chip">Quarto</span></p>
 </div>
-<div class="skills-group">
-<p><strong>Process &amp; Delivery</strong></p>
-<p><span class="badge">Business Analysis</span> <span class="badge">BPMN</span> <span class="badge">UML</span> <span class="badge">Scrum</span> <span class="badge">Kanban</span> <span class="badge">Jira</span> <span class="badge">Confluence</span></p>
+</section>
+<section id="analytics-engineering" class="level3 skill-card">
+<h3 data-anchor-id="analytics-engineering"><i class="bi bi-diagram-3"></i> Analytics engineering</h3>
+<div class="chips">
+<p><span class="chip">SQL</span> <span class="chip">BigQuery</span> <span class="chip">PostgreSQL</span> <span class="chip">dbt</span> <span class="chip">Airflow</span> <span class="chip">Data Modeling</span> <span class="chip">ELT/ETL</span> <span class="chip">Delta Lake</span></p>
+</div>
+</section>
+<section id="fast-data-processing" class="level3 skill-card">
+<h3 data-anchor-id="fast-data-processing"><i class="bi bi-lightning-charge"></i> Fast data processing</h3>
+<div class="chips">
+<p><span class="chip">DuckDB</span> <span class="chip">duckplyr</span> <span class="chip">dplyr</span> <span class="chip">Python</span> <span class="chip">PySpark</span> <span class="chip">SparkR</span></p>
+</div>
+</section>
+<section id="interactive-data-visualization" class="level3 skill-card">
+<h3 data-anchor-id="interactive-data-visualization"><i class="bi bi-bar-chart-line"></i> Interactive data visualization</h3>
+<div class="chips">
+<p><span class="chip">echarts4r</span> <span class="chip">reactable</span> <span class="chip">ggplot2</span> <span class="chip">Matplotlib</span> <span class="chip">Power BI</span> <span class="chip">Tableau</span></p>
+</div>
+</section>
+<section id="testing-cicd-deployment" class="level3 skill-card">
+<h3 data-anchor-id="testing-cicd-deployment"><i class="bi bi-shield-check"></i> Testing, CI/CD &amp; deployment</h3>
+<div class="chips">
+<p><span class="chip">testthat</span> <span class="chip">Docker</span> <span class="chip">GitHub Actions</span> <span class="chip">GitLab CI/CD</span></p>
+</div>
+</section>
+<section id="bridging-business-tech" class="level3 skill-card">
+<h3 data-anchor-id="bridging-business-tech"><i class="bi bi-people"></i> Bridging business &amp; tech</h3>
+<div class="chips">
+<p><span class="chip">Requirements Gathering</span> <span class="chip">Business Analysis</span> <span class="chip">BPMN</span> <span class="chip">UML</span> <span class="chip">Scrum</span> <span class="chip">Kanban</span> <span class="chip">Jira</span> <span class="chip">Confluence</span></p>
+</div>
+</section>
 </div>
 </section>
 <section id="education" class="level2">
-<h2 data-anchor-id="education">Education</h2>
+<h2 data-anchor-id="education">Education &amp; Certifications</h2>
+<div class="background-grid">
+<section id="education-1" class="level3 timeline-card">
+<h3 data-anchor-id="education-1"><i class="bi bi-mortarboard"></i> Education</h3>
+<div class="timeline">
 <ul>
-<li>2023–2024 - Postgraduate in Software Engineering - Descomplica</li>
-<li>2006–2009 - B.A. in Business Administration - Anhanguera</li>
+<li><span class="tl-date">2023–2024</span> <span class="tl-title">Postgraduate in Software Engineering</span> <span class="tl-org">Descomplica</span></li>
+<li><span class="tl-date">2006–2009</span> <span class="tl-title">B.A. in Business Administration</span> <span class="tl-org">Anhanguera</span></li>
 </ul>
+</div>
 </section>
-<section id="certifications" class="level2">
-<h2 data-anchor-id="certifications">Certifications</h2>
+<section id="certifications" class="level3 timeline-card">
+<h3 data-anchor-id="certifications"><i class="bi bi-patch-check"></i> Certifications</h3>
+<div class="timeline">
 <ul>
-<li><a href="https://www.coursera.org/professional-certificates/google-advanced-data-analytics" target="_blank">Google Advanced Data Analytics Professional Certificate</a> - Coursera, 2023</li>
-<li><a href="https://www.coursera.org/specializations/data-science-foundations-r" target="_blank">Data Science: Foundations using R</a> - Coursera, 2023</li>
-<li><a href="https://www.coursera.org/professional-certificates/google-data-analytics" target="_blank">Google Data Analytics Professional Certificate</a> - Coursera, 2022</li>
-<li><a href="https://www.coursera.org/specializations/software-product-management" target="_blank">Software Product Management Specialization</a> - Coursera, 2018</li>
+<li><span class="tl-date">2023</span> <a href="https://www.coursera.org/professional-certificates/google-advanced-data-analytics" class="tl-title" target="_blank">Google Advanced Data Analytics Professional Certificate</a> <span class="tl-org">Coursera</span></li>
+<li><span class="tl-date">2023</span> <a href="https://www.coursera.org/specializations/data-science-foundations-r" class="tl-title" target="_blank">Data Science: Foundations using R</a> <span class="tl-org">Coursera</span></li>
+<li><span class="tl-date">2022</span> <a href="https://www.coursera.org/professional-certificates/google-data-analytics" class="tl-title" target="_blank">Google Data Analytics Professional Certificate</a> <span class="tl-org">Coursera</span></li>
+<li><span class="tl-date">2018</span> <a href="https://www.coursera.org/specializations/software-product-management" class="tl-title" target="_blank">Software Product Management Specialization</a> <span class="tl-org">Coursera</span></li>
 </ul>
+</div>
+</section>
+</div>
 </section>
 <section id="contact" class="level2">
 <h2 data-anchor-id="contact">Contact</h2>
-<p><a href="mailto:tiagoadrianunes@gmail.com">tiagoadrianunes@gmail.com</a> · <a href="https://www.linkedin.com/in/tiagoadrianunes/" target="_blank">LinkedIn</a> · <a href="https://github.com/TiagoAdriaNunes" target="_blank">GitHub</a></p>
-
+<section id="lets-connect" class="level3 contact-card">
+<h3 data-anchor-id="lets-connect">Let’s connect</h3>
+<p>Have a data application or analytics platform in mind, or a question about one of my projects? Send me a message.</p>
+<div class="contact-actions">
+<p><a href="mailto:tiagoadrianunes@gmail.com" class="pf-btn pf-btn-primary"><i class="bi bi-envelope"></i> tiagoadrianunes@gmail.com</a> <a href="https://www.linkedin.com/in/tiagoadrianunes/" class="pf-btn" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a> <a href="https://github.com/TiagoAdriaNunes" class="pf-btn" target="_blank"><i class="bi bi-github"></i> GitHub</a></p>
+</div>
+</section>
 
 
 </section>
@@ -317,6 +595,54 @@ ul.task-list li input[type="checkbox"] {
 
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const toggle = window.document.createElement('button');
+      toggle.type = "button";
+      toggle.setAttribute("role", "switch");
+      toggle.setAttribute("aria-checked", "false");
+      toggle.classList.add('top-right');
+      toggle.classList.add('quarto-color-scheme-toggle');
+      toggle.setAttribute("aria-label", "Toggle dark mode");
+      toggle.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      toggle.appendChild(i);
+      // Put the toggle in a landmark of its own, so that landmark navigation
+      // can reach it.
+      //
+      // The container is always a fresh direct child of body, and the toggle is
+      // never moved into page furniture that the theme or the author controls.
+      // The toggle is positioned against the page, so any ancestor that
+      // establishes a containing block captures it: a positioned element or a
+      // grid for position: absolute, and transform, filter, will-change or
+      // contain for position: fixed. A direct child of body has none of these
+      // to inherit, and the shift when one appears is silent and visual.
+      //
+      // ARIA says a document should have at most one banner, and axe reports a
+      // duplicate whether or not the banners carry distinct labels. So use a
+      // header when the page has no banner yet, and a named region otherwise.
+      //
+      // A header is a banner wherever it sits, unless it is inside sectioning
+      // content, so this cannot just look at the children of body: a custom
+      // page layout wraps the title block header in a plain div. An explicit
+      // role="banner" always counts.
+      const sectioning = 'article, aside, main, nav, section, [role="article"], [role="complementary"], [role="main"], [role="navigation"], [role="region"]';
+      const hasBanner = Array.from(
+        window.document.querySelectorAll('header:not([role]), [role="banner"]')
+      ).some(function(el) {
+        return el.hasAttribute("role") || el.closest(sectioning) === null;
+      });
+      const container = window.document.createElement(hasBanner ? "div" : "header");
+      if (hasBanner) {
+        container.setAttribute("role", "region");
+        container.setAttribute("aria-label", "Toggle dark mode");
+      }
+      container.classList.add('quarto-color-scheme-toggle-container');
+      container.appendChild(toggle);
+      window.document.body.appendChild(container);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -386,7 +712,8 @@ ul.task-list li input[type="checkbox"] {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
       // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
       for (var i=0; i<links.length; i++) {
         const link = links[i];
         if (!isInternal(link.href)) {
@@ -395,8 +722,69 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+          if (!link.classList.contains('no-external-icon')) {
+          }
         }
       }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
       const config = {
         allowHTML: true,
@@ -410,6 +798,7 @@ ul.task-list li input[type="checkbox"] {
         interactiveBorder: 10,
         theme: 'quarto',
         placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
       };
       if (contentFn) {
         config.content = contentFn;
@@ -572,44 +961,54 @@ ul.task-list li input[type="checkbox"] {
           const lineIds = lines.map((line) => {
             return targetCell + "-" + line;
           })
-          let top = null;
-          let height = null;
-          let parent = null;
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
           if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
             }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
             }
+            placeBand(gutterDiv, el, lastEl);
             selectedAnnoteEl = annoteEl;
           }
         };
@@ -707,6 +1106,9 @@ ul.task-list li input[type="checkbox"] {
       }
     }
   });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
   </script>
 </div> <!-- /content -->
 <footer class="footer">
