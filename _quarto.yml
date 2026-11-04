@@ -1,35 +1,49 @@
 project:
   type: website
   output-dir: docs
-  
+
 website:
   title: "Tiago Adria Nunes"
-  description: "Portfolio of Tiago Adria Nunes, R/Shiny developer and data engineer: Shiny dashboards, dbt, DuckDB, Airflow, and Databricks projects."
+  description: "Portfolio of Tiago Adria Nunes, R/Shiny developer building production Shiny applications and analytics engineering workflows with Rhino, BigQuery, dbt, Airflow, DuckDB, and Docker."
   site-url: https://tiagoadrianunes.github.io/portfolio/
+  favicon: favicon.svg
   llms-txt: true
+  search: false
   navbar:
-    left:
-      - href: index.qmd
+    logo: favicon.svg
+    logo-alt: "TN monogram"
+    right:
+      - href: "#about"
         text: About
+      - href: "#projects"
+        text: Projects
+      - href: "#skills"
+        text: Skills
+      - href: "#education"
+        text: Education
+      - href: "#contact"
+        text: Contact
     tools:
       - icon: linkedin
         href: https://www.linkedin.com/in/tiagoadrianunes/
+        aria-label: LinkedIn
       - icon: github
         href: https://github.com/TiagoAdriaNunes/
+        aria-label: GitHub
   page-footer:
-    right: "Built with [Quarto](https://quarto.org/)"
     left: "&copy; Copyright 2026, Tiago Adria Nunes"
+    right: "Built with [Quarto](https://quarto.org/)"
 
 format:
   html:
-    theme: flatly
-    toc: true
-    toc_depth: 2
-    toc-title: On this page
-    toc_float: true
-    toc_smooth_scroll: true
-    toc_highlight: true
-    fig-align: center
-    
-editor: source
+    theme:
+      light: [default, theme-light.scss]
+      dark: [default, theme-dark.scss]
+    # Follow the visitor's system setting until they use the toggle.
+    respect-user-color-scheme: true
+    css: styles.css
+    toc: false
+    anchor-sections: false
+    page-layout: full
 
+editor: source

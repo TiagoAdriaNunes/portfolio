@@ -1,0 +1,52 @@
+/*-- scss:defaults --*/
+// Light mode: soft slate background with an emerald -> cyan accent.
+// The --pf-* variables below drive the custom components in styles.css.
+
+$body-bg: #f8fafc;
+$body-color: #0f172a;
+$primary: #047857;
+$link-color: #047857;
+$link-hover-color: #0e7490;
+
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+$font-family-monospace: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+$headings-font-family: "Space Grotesk", "Inter", system-ui, sans-serif;
+$headings-font-weight: 600;
+
+$navbar-bg: #f8fafc;
+$navbar-fg: #475569;
+$navbar-hl: #0f172a;
+$footer-bg: #f8fafc;
+$footer-fg: #64748b;
+
+/*-- scss:rules --*/
+:root {
+  color-scheme: light;
+
+  --pf-bg: #f8fafc;
+  --pf-surface: #ffffff;
+  --pf-surface-2: #f1f5f9;
+  --pf-border: #e2e8f0;
+  --pf-border-strong: #cbd5e1;
+
+  --pf-text: #0f172a;
+  --pf-muted: #475569;
+  --pf-subtle: #64748b;
+
+  --pf-accent: #059669;
+  --pf-accent-strong: #047857;
+  --pf-accent-2: #0891b2;
+  --pf-accent-soft: rgba(5, 150, 105, 0.08);
+  --pf-accent-ring: rgba(5, 150, 105, 0.28);
+  --pf-on-accent: #ffffff;
+  --pf-btn-grad: linear-gradient(135deg, #047857, #0e7490);
+  --pf-text-grad: linear-gradient(90deg, #059669, #0891b2);
+
+  --pf-glow-1: rgba(16, 185, 129, 0.16);
+  --pf-glow-2: rgba(6, 182, 212, 0.14);
+  --pf-grid-line: rgba(15, 23, 42, 0.05);
+  --pf-nav-bg: rgba(248, 250, 252, 0.75);
+
+  --pf-shadow: 0 1px 2px rgba(15, 23, 42, 0.04), 0 4px 16px rgba(15, 23, 42, 0.05);
+  --pf-shadow-hover: 0 2px 4px rgba(15, 23, 42, 0.05), 0 18px 40px rgba(15, 23, 42, 0.1);
+}
