@@ -330,7 +330,7 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="#projects" class="pf-btn pf-btn-primary">View projects <i class="bi bi-arrow-down-short"></i></a> <a href="mailto:tiagoadrianunes@gmail.com" class="pf-btn"><i class="bi bi-envelope"></i> Email me</a> <a href="https://www.linkedin.com/in/tiagoadrianunes/" class="pf-btn pf-btn-icon" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a> <a href="https://github.com/TiagoAdriaNunes" class="pf-btn pf-btn-icon" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a></p>
 </div>
 <div class="hero-stats">
-<p><span class="stat"><span class="stat-value">10+</span> <span class="stat-label">years in IT</span></span> <span class="stat"><span class="stat-value">5</span> <span class="stat-label">industries</span></span> <span class="stat"><span class="stat-value">6</span> <span class="stat-label">featured projects</span></span></p>
+<p><span class="stat"><span class="stat-value">10+</span> <span class="stat-label">years in IT</span></span> <span class="stat"><span class="stat-value">5</span> <span class="stat-label">industries</span></span> <span class="stat"><span class="stat-value">8</span> <span class="stat-label">featured projects</span></span></p>
 </div>
 </section>
 </div>
@@ -363,6 +363,30 @@ ul.task-list li input[type="checkbox"] {
 <p>Shiny apps and data engineering pipelines I’ve built. Hover a card to play its demo.</p>
 </div>
 <div class="project-grid">
+<div class="project-card">
+<p><a href="https://shinychat-openrouter.fly.dev/" class="project-media" target="_blank" aria-label="Open the shinychat + OpenRouter live app"><img src="img/shiny_openrouter.gif" class="img-fluid" alt="shinychat + OpenRouter chatbot demo"></a></p>
+<section id="shinychat-openrouter" class="level3">
+<h3 data-anchor-id="shinychat-openrouter"><a href="https://github.com/TiagoAdriaNunes/shinychat-openrouter" target="_blank">shinychat + OpenRouter</a></h3>
+<div class="chips">
+<p><span class="chip">R</span> <span class="chip">Shiny</span> <span class="chip">shinychat</span> <span class="chip">ellmer</span> <span class="chip">OpenRouter</span> <span class="chip">box</span> <span class="chip">Fly.io</span></p>
+</div>
+<p>Streaming AI chatbot built with R/Shiny, shinychat, and ellmer, running on free OpenRouter models. An Agent mode turns it into a data agent that answers questions from World Bank and IMF indicators.</p>
+<details>
+<summary>
+Highlights
+</summary>
+<ul>
+<li>Live model picker listing OpenRouter’s free models, ranked by intelligence index; switching models keeps the conversation</li>
+<li>Agent mode: a commons data agent over World Development Indicators and IMF DataMapper data, marking each answer as trusted, cited, or untrusted</li>
+<li>Answers are only shown when the model actually looked the data up, so it doesn’t show made-up figures</li>
+<li>Modular code with box and renv, testthat tests with mocked API calls, and Docker deployment on Fly.io</li>
+</ul>
+</details>
+<div class="project-links">
+<p><a href="https://github.com/TiagoAdriaNunes/shinychat-openrouter" target="_blank"><i class="bi bi-github"></i> Code</a> <a href="https://shinychat-openrouter.fly.dev/" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Live app</a></p>
+</div>
+</section>
+</div>
 <div class="project-card">
 <p><a href="https://tiagoadrianunes.shinyapps.io/IMDB_TOP_5000/" class="project-media" target="_blank" aria-label="Open the IMDb Top 5000 live app"><img src="img/Imdb_top_5000.gif" class="img-fluid" alt="IMDb Top 5000 app demo"></a></p>
 <section id="imdb-top-5000" class="level3">
@@ -404,6 +428,43 @@ Highlights
 </details>
 <div class="project-links">
 <p><a href="https://github.com/TiagoAdriaNunes/lastfm-global-trends" target="_blank"><i class="bi bi-github"></i> Code</a> <a href="https://tiagoadrianunes.shinyapps.io/lastfm-global-trends/" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Live app</a></p>
+</div>
+</section>
+</div>
+<div class="project-card">
+<a class="project-media project-terminal" href="https://lastfm-analytics-api-production.up.railway.app/docs" target="_blank" aria-label="Open the Last.fm Analytics API docs">
+<span class="terminal-bar">lastfm-analytics-api</span>
+<pre><span class="t-method">GET</span> /artists/similar/network?artist=Radiohead
+<span class="t-ok">200 OK</span>
+{
+  <span class="t-key">"artist"</span>: <span class="t-str">"Radiohead"</span>,
+  <span class="t-key">"nodes"</span>: [
+    {<span class="t-key">"id"</span>: <span class="t-num">1</span>, <span class="t-key">"name"</span>: <span class="t-str">"Radiohead"</span>, <span class="t-key">"level"</span>: <span class="t-num">0</span>},
+    {<span class="t-key">"id"</span>: <span class="t-num">2</span>, <span class="t-key">"name"</span>: <span class="t-str">"Thom Yorke"</span>, <span class="t-key">"level"</span>: <span class="t-num">1</span>},
+    <span class="t-muted">…</span>
+  ],
+  <span class="t-key">"edges"</span>: [{<span class="t-key">"from"</span>: <span class="t-num">1</span>, <span class="t-key">"to"</span>: <span class="t-num">2</span>, <span class="t-key">"weight"</span>: <span class="t-num">1.0</span>}]
+}</pre>
+</a>
+<section id="last.fm-analytics-api" class="level3">
+<h3 data-anchor-id="last.fm-analytics-api"><a href="https://github.com/TiagoAdriaNunes/lastfm-analytics-api" target="_blank">Last.fm Analytics API</a></h3>
+<div class="chips">
+<p><span class="chip">Python</span> <span class="chip">FastAPI</span> <span class="chip">Last.fm API</span> <span class="chip">uv</span> <span class="chip">GitHub Actions</span> <span class="chip">Railway</span></p>
+</div>
+<p>FastAPI service for music analytics on top of the Last.fm API: search, similar artists and tracks, tags, and similar-artist networks ready for graph visualisation.</p>
+<details>
+<summary>
+Highlights
+</summary>
+<ul>
+<li>Endpoints for artists, albums, tracks, and tags, including a similar-artist network (nodes + edges) up to 3 levels deep</li>
+<li>One shared rate limiter for all Last.fm calls, with 1-hour caching, shared in-flight requests, and retries with backoff</li>
+<li>API-key authentication, rate-limited public example endpoints, and structured JSON logging with loguru</li>
+<li>CI on GitHub Actions and deployed on Railway with interactive docs</li>
+</ul>
+</details>
+<div class="project-links">
+<p><a href="https://github.com/TiagoAdriaNunes/lastfm-analytics-api" target="_blank"><i class="bi bi-github"></i> Code</a> <a href="https://lastfm-analytics-api-production.up.railway.app/docs" target="_blank"><i class="bi bi-box-arrow-up-right"></i> API docs</a></p>
 </div>
 </section>
 </div>

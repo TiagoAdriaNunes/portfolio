@@ -10,7 +10,7 @@ I develop and maintain analytical web applications for the Data Science team at 
 
 [View projects ](#projects) [ Email me](mailto:tiagoadrianunes@gmail.com) [](https://www.linkedin.com/in/tiagoadrianunes/) [](https://github.com/TiagoAdriaNunes)
 
-10+ years in IT 5 industries 6 featured projects
+10+ years in IT 5 industries 8 featured projects
 
 ![Portrait of Tiago Adria Nunes](img/profile.jpg)
 
@@ -30,6 +30,23 @@ I’m interested in building scalable, maintainable data applications and analyt
 ## Projects
 
 Shiny apps and data engineering pipelines I’ve built. Hover a card to play its demo.
+
+[![shinychat + OpenRouter chatbot demo](img/shiny_openrouter.gif)](https://shinychat-openrouter.fly.dev/)
+
+### [shinychat + OpenRouter](https://github.com/TiagoAdriaNunes/shinychat-openrouter)
+
+R Shiny shinychat ellmer OpenRouter box Fly.io
+
+Streaming AI chatbot built with R/Shiny, shinychat, and ellmer, running on free OpenRouter models. An Agent mode turns it into a data agent that answers questions from World Bank and IMF indicators.
+
+Highlights
+
+- Live model picker listing OpenRouter’s free models, ranked by intelligence index; switching models keeps the conversation
+- Agent mode: a commons data agent over World Development Indicators and IMF DataMapper data, marking each answer as trusted, cited, or untrusted
+- Answers are only shown when the model actually looked the data up, so it doesn’t show made-up figures
+- Modular code with box and renv, testthat tests with mocked API calls, and Docker deployment on Fly.io
+
+[ Code](https://github.com/TiagoAdriaNunes/shinychat-openrouter) [ Live app](https://shinychat-openrouter.fly.dev/)
 
 [![IMDb Top 5000 app demo](img/Imdb_top_5000.gif)](https://tiagoadrianunes.shinyapps.io/IMDB_TOP_5000/)
 
@@ -60,6 +77,35 @@ Highlights
 - Global and country-level trend drill-down
 
 [ Code](https://github.com/TiagoAdriaNunes/lastfm-global-trends) [ Live app](https://tiagoadrianunes.shinyapps.io/lastfm-global-trends/)
+
+[lastfm-analytics-api](https://lastfm-analytics-api-production.up.railway.app/docs)
+
+    GET /artists/similar/network?artist=Radiohead
+    200 OK
+    {
+      "artist": "Radiohead",
+      "nodes": [
+        {"id": 1, "name": "Radiohead", "level": 0},
+        {"id": 2, "name": "Thom Yorke", "level": 1},
+        …
+      ],
+      "edges": [{"from": 1, "to": 2, "weight": 1.0}]
+    }
+
+### [Last.fm Analytics API](https://github.com/TiagoAdriaNunes/lastfm-analytics-api)
+
+Python FastAPI Last.fm API uv GitHub Actions Railway
+
+FastAPI service for music analytics on top of the Last.fm API: search, similar artists and tracks, tags, and similar-artist networks ready for graph visualisation.
+
+Highlights
+
+- Endpoints for artists, albums, tracks, and tags, including a similar-artist network (nodes + edges) up to 3 levels deep
+- One shared rate limiter for all Last.fm calls, with 1-hour caching, shared in-flight requests, and retries with backoff
+- API-key authentication, rate-limited public example endpoints, and structured JSON logging with loguru
+- CI on GitHub Actions and deployed on Railway with interactive docs
+
+[ Code](https://github.com/TiagoAdriaNunes/lastfm-analytics-api) [ API docs](https://lastfm-analytics-api-production.up.railway.app/docs)
 
 [![Spotify Search App demo](img/shiny_spotify.gif)](https://tiagoadrianunes.shinyapps.io/shiny_spotify/)
 
